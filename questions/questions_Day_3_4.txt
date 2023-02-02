@@ -1,0 +1,110 @@
+Question: Most dangerous command because it will give all the read power to any user.
+
+which cat
+chmod u+s /usr/bin/cat
+
+===============================
+
+Question: locate any file in system.
+
+yum install mlocate -y
+locate passwd
+locate -c *.jpg => count total jpg files in system.
+
+I prefer find command here. find command has better capabilities.
+
+===============================
+
+Question: To check the ip of system.
+ifconfig
+hostname -i
+
+===============================
+
+Question: Tricks (Regex=> Regular expression)
+if in your system some user named bash_user (or some user which have bash string is there) then you will see the difference v
+grep bash$ /etc/passwd
+grep bash /etc/passwd
+
+^[1-9][0-9]{3}$
+^[1-9]\d{3}$
+
+grep 'nishant\>' regex_string.txt => Give all the strings which  end with nishant.
+grep '\<nishant' regex_string.txt => Give all the strings which  start with nishant.
+grep '\<nishant\>' regex_string.txt => Give all the strings which start & end with nishant.
+grep '\<nishant\>\s' regex_string.txt => Give all the strings which start & end with nishant and have space after nishant string.
+grep '\s\<nishant\>\s' regex_string.txt
+grep '^nishant' regex_string.txt => Give only that string & line which start with same string.
+
+===============================
+
+Question: Regex example.
+
+useradd bash_user
+grep bash /etc/passwd => give all lines which match the bash string.
+grep bash$ /etc/passwd => give all lines which end with the bash string.
+grep ^bash /etc/passwd => give all lines which start with the bash string.
+grep '\w\{1,\}@\w\{1,\}\.\w\{1,\}' regex_string.txt => it will search the strings like {0-9A-Za-z}@{0-9A-Za-z}.{0-9A-Za-z} => used for searching mail ids.
+
+===============================
+
+sed 2,6d regex_string.txt => give data after removing 2 to 6 line
+sed 3d regex_string.txt => give data after removing 3rd line.
+cat regex_string.txt  => all data is there.
+
+sed 's/vimal/nishant' regex_string.txt
+sed -i  's/vimal/nishant/g' regex_string.txt => replace vimal string from nishant everywhere in the file.
+
+===================================
+
+Question: trap & kill use cases.
+
+===================================
+
+Question: number expression
+4 + 1 => give error
+expr 4 + 1 => 5
+echo $(( 5 * 5 -2)) => 23
+
+==================================
+
+Question: Difference between su username and su - username.
+
+su username => login inside the system by user but remain in the previous user current folder.
+su - username => login inside the system by user & land on user home directory.
+
+==================================
+
+Question: Enable cdspell in terminal
+shopt
+shopt -s => All enable things come.
+shopt cdspell => for checking its status (enable/not enable)
+shopt -s cdspell => for enable
+shopt cdspell
+mkdir /Test => create Test
+cd /test => cd for test/Test both will work here because of shopt -s cdspell.
+
+=================================
+
+Question: You want to print the output of any command on screen & storing it in file also.
+
+date | tee a.txt => print the output on terminal as well as store it in file also.
+date | tee -a a.txt => print the output on terminal as well as append it in file also.
+
+==================================
+
+Question: How to print bash process id.
+echo $$ => give process id of bash process.
+ps -aux | grep bash
+
+==================================
+
+cat /etc/passwd | awk -F: '{ print $7 }' | sort | uniq -c | sort -n
+cat /etc/passwd | awk -F: '{ print $7 }' | sort | uniq -c | sort 
+cat /etc/passwd | awk -F: '{ print $7 }' | sort | uniq
+
+
+
+
+
+

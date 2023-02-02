@@ -1,0 +1,1626 @@
+    5  cd /root/shell_ws/
+    6  ls
+    7  bash -c date
+    8  date
+    9  which cat
+   10  ls -l /usr/bin/cat
+   11  user_package_install.sh 
+   12  locate passwd
+   13  locate *.jpg
+   14  touch a{1..10}.jpg
+   15  ls
+   16  locate *.jpg
+   17  find / -n *.jpg
+   18  find / --n *.jpg
+   19  find / --name *.jpg
+   20  find / -name *.jpg
+   21  locate -e  *.jpg
+   22  ls
+   23  test -d /etc/
+   24  test -e /etc/
+   25  nc 8.8.8.8 80
+   26  yum install nc
+   27  nc 8.8.8.8 80
+   28  ls
+   29  rm -f a{1..10}.jpg
+   30  ls
+   31  vim server.sh
+   32  chmod server.sh 
+   33  chmod +x server.sh 
+   34  server.sh 
+   35  server.sh  1
+   36  vim server.sh
+   37  server.sh  1
+   38  server.sh  
+   39  hostname -i
+   40  ifconfig
+   41  vim server.sh
+   42  server.sh  
+   43  vim server.sh
+   44  server.sh  
+   45  vim server.sh
+   46  vim other.sh
+   47  chmod +x other.sh 
+   48  other.sh 
+   49  mv other.sh switch.sh
+   50  ls
+   51  mv server.sh if_server.sh
+   52  ls
+   53  cp if_server.sh switch_server.sh
+   54  ls
+   55  vim switch_server.sh 
+   56  switch_server.sh 
+   57  vim switch_server.sh 
+   58  switch_server.sh 
+   59  grep bash /etc/passwd
+   60  useradd bashuser
+   61  grep bash /etc/passwd
+   62  grep bas$h /etc/passwd
+   63  grep bash$ /etc/passwd
+   64  grep bash$ /etc/passwd | cut -d ":" f5
+   65  grep bash$ /etc/passwd | cut -d ":" f 5
+   66  grep bash$ /etc/passwd | cut -d ":" -f5
+   67  grep bash$ /etc/passwd | cut -d ":" -f6
+   68  grep bash$ /etc/passwd | awk '{ print $6 $7 }'
+   69  grep bash$ /etc/passwd | awk -F: '{ print $6 $7 }'
+   70  grep bash$ /etc/passwd | awk -F: '{ print $6 "  " $7 }'
+   71  ls
+   72  history
+   73  ls
+   74  history > bash_command_Day3&4.txt
+   75  history > bash_command_Day3_4.txt
+   76  ps -aux | grep history
+   77  jobs
+   78  fg
+   79  ls
+   80  rm -f bash_command_Day3
+   81  ls
+   82  cat bash_command_Day3_4.txt 
+   83  cat >> regex_string.txt
+   84  cat regex_string.txt 
+   85  grep b.e regex_string.txt 
+   86  cat >> regex_string.txt 
+   87  cat regex_string.txt 
+   88  grep b.e regex_string.txt 
+   89  grep bye regex_string.txt 
+   90  grep b[Yy]e regex_string.txt 
+   91  grep b[YytT]e regex_string.txt 
+   92  grep b[a-zA-Z0-9#$%,.]e regex_string.txt 
+   93  cat >> regex_string.txt 
+   94  grep b[a-zA-Z0-9#$%,.]e regex_string.txt 
+   95  grep -i bye regex_string.txt 
+   96  grep [Bb][Yy][Ee] regex_string.txt 
+   97  grep b[^0-9]e regex_string.txt 
+   98  grep b[$*]e
+   99  grep b[$*]e regex_string.txt 
+  100  grep b$*e regex_string.txt 
+  101  grep b*e regex_string.txt 
+  102  cat >> regex_string.txt 
+  103  grep b*e regex_string.txt 
+  104  grep b$*e regex_string.txt 
+  105  grep b$$*e regex_string.txt 
+  106  grep b${$*}e regex_string.txt 
+  107  grep b$e regex_string.txt 
+  108  grep 'b$e' regex_string.txt 
+  109  grep 'b$*e' regex_string.txt 
+  110  grep 'b$$*e' regex_string.txt 
+  111  cat regex_string.txt 
+  112  grep 'b$$**e' regex_string.txt 
+  113  grep 'b$$*#e' regex_string.txt 
+  114  grep 'b${2}#e' regex_string.txt 
+  115  cat >> regex_string.txt 
+  116  cat regex_string.txt 
+  117  grep '[0-9]' regex_string.txt 
+  118  grep '[0-9]{}4' regex_string.txt 
+  119  grep '[0-9]{4}' regex_string.txt 
+  120  grep '{0-9}' regex_string.txt 
+  121  grep '{0-9}{0-9}' regex_string.txt 
+  122  grep '{0-9}{0-9}{0-9}' regex_string.txt 
+  123  grep \d\d\d\d[^\d] regex_string.txt 
+  124  grep \d\d\d\d regex_string.txt 
+  125  grep ^SW[0-9]{4}$  regex_string.txt 
+  126  grep '^SW[0-9]{4}$'  regex_string.txt 
+  127  grep '\d\d\d\d' regex_string.txt 
+  128  grep '\d\d\d\d[^\d]' regex_string.txt 
+  129  grep '^SW[0-9]{4}'  regex_string.txt 
+  130  grep '^[0-9]{4}'  regex_string.txt 
+  131  grep '^[0-9]{4}$' regex_string.txt 
+  132  grep '^[1-9][0-9]{3}$' regex_string.txt 
+  133  cat >> regex_string.txt 
+  134  cat regex_string.txt 
+  135  grep 'nishant\>' regex_string.txt 
+  136  grep '</nishant' regex_string.txt 
+  137  grep '\<nishant' regex_string.txt 
+  138  grep '\<nishant\>' regex_string.txt 
+  139  cat >> regex_string.txt 
+  140  grep '\<nishant\>' regex_string.txt 
+  141  grep '\<nishant\>$' regex_string.txt 
+  142  grep '\<nishant\>\s' regex_string.txt 
+  143  grep '\s\<nishant\>\s' regex_string.txt 
+  144  cat >> regex_string.txt 
+  145* grep '\s\<nisGive all the strings which start & end with nishanthant\>\s' regex_string.txt 
+  146  grep '\<nishant\>\s' regex_string.txt 
+  147  cat >> regex_string.txt 
+  148  grep '\<nishant\>\s' regex_string.txt 
+  149  grep '^nishant' regex_string.txt 
+  150  id bash_user
+  151  useradd bash_user
+  152  grep bash /etc/passwd
+  153  grep bash$ /etc/passwd
+  154  grep ^bash /etc/passwd
+  155  history
+  156  grep '\w+@\w+\.\w+' /etc/passwd
+  157  grep '\w\{1,\}@\w\{1,\}\.\w\{1,\}' /etc/passwd
+  158  grep '\w\{1,\}@\w\{1,\}\.\w\{1,\}' regex_string.txt 
+  159  cat >> regex_string.txt 
+  160  cat regex_string.txt 
+  161  grep '\w\{1,\}@\w\{1,\}\.\w\{1,\}' regex_string.txt 
+  162  vim regex_string.txt 
+  163  cat regex_string.txt 
+  164  sed 3d regex_string.txt 
+  165  cat regex_string.txt 
+  166  sed 3,10d regex_string.txt 
+  167  cat regex_string.txt 
+  168  history > bash_command_Day3_4.txt 
+  169  cat bash_command_Day3_4.txt 
+  170  sed s/vimal/nishant regex_string.txt
+  171  sed 's/vimal/nishant' regex_string.txt
+  172  sed -i 's/vimal/nishant' regex_string.txt
+  173  sed 's/vimal/nishant' regex_string.txt 
+  174  sed `s/vimal/nishant` regex_string.txt 
+  175  ls
+  176  sed -i  s/vimal/nishant' regex_string.txt 
+;
+;'
+  177  sed -i  's/vimal/nishant' regex_string.txt
+  178  sed -i  's/vimal/nishant/' regex_string.txt
+  179  cat regex_string.txt 
+  180  sed -i  's/nishant/vimal/' regex_string.txt
+  181  cat regex_string.txt 
+  182  sed -i  's/nishant/vimal/g' regex_string.txt
+  183  cat regex_string.txt 
+  184  sed -i  's/vimal/nishant/g' regex_string.txt
+  185  cat regex_string.txt 
+  186  history > bash_command_Day3_4.txt 
+  187  vim bash_command_Day3_4.txt 
+  188  history
+  189  ls
+  190  kill -l
+  191  vim if_server.sh 
+  192  if_server.sh 
+  193  ls -l /tmp/password.txt
+  194  vim if_server.sh 
+  195  ls -l /tmp/password.txt
+  196  if_server.sh 
+  197  ls -l /tmp/password.txt
+  198  vim switch_server.sh 
+  199  switch_server.sh 
+  200  ls -l /tmp/password.txt
+  201  vim switch_server.sh 
+  202  switch_server.sh 
+  203  ls -l /tmp/password.txt
+  204  if_server.sh 
+  205  ls -l /tmp/password.txt
+  206  if_server.sh 
+  207  ls -l /tmp/password.txt
+  208  if_server.sh 
+  209  echo $?
+  210  vim if_server.sh 
+  211  if_server.sh 
+  212  echo $?
+  213  if_server.sh 
+  214  echo $?
+  215  vim switch_server.sh 
+  216  switch_server.sh 
+  217  vim switch_server.sh 
+  218  switch_server.sh 
+  219  echo $?
+  220  switch_server.sh 
+  221  echo $?
+  222  trap -l
+  223  history > bash_command_Day3_4.txt 
+    1  history
+    2  history > test
+    3  cat test 
+    4  history -w
+    5  cd /root/shell_ws/
+    6  ls
+    7  bash -c date
+    8  date
+    9  which cat
+   10  ls -l /usr/bin/cat
+   11  user_package_install.sh 
+   12  locate passwd
+   13  locate *.jpg
+   14  touch a{1..10}.jpg
+   15  ls
+   16  locate *.jpg
+   17  find / -n *.jpg
+   18  find / --n *.jpg
+   19  find / --name *.jpg
+   20  find / -name *.jpg
+   21  locate -e  *.jpg
+   22  ls
+   23  test -d /etc/
+   24  test -e /etc/
+   25  nc 8.8.8.8 80
+   26  yum install nc
+   27  nc 8.8.8.8 80
+   28  ls
+   29  rm -f a{1..10}.jpg
+   30  ls
+   31  vim server.sh
+   32  chmod server.sh 
+   33  chmod +x server.sh 
+   34  server.sh 
+   35  server.sh  1
+   36  vim server.sh
+   37  server.sh  1
+   38  server.sh  
+   39  hostname -i
+   40  ifconfig
+   41  vim server.sh
+   42  server.sh  
+   43  vim server.sh
+   44  server.sh  
+   45  vim server.sh
+   46  vim other.sh
+   47  chmod +x other.sh 
+   48  other.sh 
+   49  mv other.sh switch.sh
+   50  ls
+   51  mv server.sh if_server.sh
+   52  ls
+   53  cp if_server.sh switch_server.sh
+   54  ls
+   55  vim switch_server.sh 
+   56  switch_server.sh 
+   57  vim switch_server.sh 
+   58  switch_server.sh 
+   59  grep bash /etc/passwd
+   60  useradd bashuser
+   61  grep bash /etc/passwd
+   62  grep bas$h /etc/passwd
+   63  grep bash$ /etc/passwd
+   64  grep bash$ /etc/passwd | cut -d ":" f5
+   65  grep bash$ /etc/passwd | cut -d ":" f 5
+   66  grep bash$ /etc/passwd | cut -d ":" -f5
+   67  grep bash$ /etc/passwd | cut -d ":" -f6
+   68  grep bash$ /etc/passwd | awk '{ print $6 $7 }'
+   69  grep bash$ /etc/passwd | awk -F: '{ print $6 $7 }'
+   70  grep bash$ /etc/passwd | awk -F: '{ print $6 "  " $7 }'
+   71  ls
+   72  history
+   73  ls
+   74  history > bash_command_Day3&4.txt
+   75  history > bash_command_Day3_4.txt
+   76  ps -aux | grep history
+   77  jobs
+   78  fg
+   79  ls
+   80  rm -f bash_command_Day3
+   81  ls
+   82  cat bash_command_Day3_4.txt 
+   83  cat >> regex_string.txt
+   84  cat regex_string.txt 
+   85  grep b.e regex_string.txt 
+   86  cat >> regex_string.txt 
+   87  cat regex_string.txt 
+   88  grep b.e regex_string.txt 
+   89  grep bye regex_string.txt 
+   90  grep b[Yy]e regex_string.txt 
+   91  grep b[YytT]e regex_string.txt 
+   92  grep b[a-zA-Z0-9#$%,.]e regex_string.txt 
+   93  cat >> regex_string.txt 
+   94  grep b[a-zA-Z0-9#$%,.]e regex_string.txt 
+   95  grep -i bye regex_string.txt 
+   96  grep [Bb][Yy][Ee] regex_string.txt 
+   97  grep b[^0-9]e regex_string.txt 
+   98  grep b[$*]e
+   99  grep b[$*]e regex_string.txt 
+  100  grep b$*e regex_string.txt 
+  101  grep b*e regex_string.txt 
+  102  cat >> regex_string.txt 
+  103  grep b*e regex_string.txt 
+  104  grep b$*e regex_string.txt 
+  105  grep b$$*e regex_string.txt 
+  106  grep b${$*}e regex_string.txt 
+  107  grep b$e regex_string.txt 
+  108  grep 'b$e' regex_string.txt 
+  109  grep 'b$*e' regex_string.txt 
+  110  grep 'b$$*e' regex_string.txt 
+  111  cat regex_string.txt 
+  112  grep 'b$$**e' regex_string.txt 
+  113  grep 'b$$*#e' regex_string.txt 
+  114  grep 'b${2}#e' regex_string.txt 
+  115  cat >> regex_string.txt 
+  116  cat regex_string.txt 
+  117  grep '[0-9]' regex_string.txt 
+  118  grep '[0-9]{}4' regex_string.txt 
+  119  grep '[0-9]{4}' regex_string.txt 
+  120  grep '{0-9}' regex_string.txt 
+  121  grep '{0-9}{0-9}' regex_string.txt 
+  122  grep '{0-9}{0-9}{0-9}' regex_string.txt 
+  123  grep \d\d\d\d[^\d] regex_string.txt 
+  124  grep \d\d\d\d regex_string.txt 
+  125  grep ^SW[0-9]{4}$  regex_string.txt 
+  126  grep '^SW[0-9]{4}$'  regex_string.txt 
+  127  grep '\d\d\d\d' regex_string.txt 
+  128  grep '\d\d\d\d[^\d]' regex_string.txt 
+  129  grep '^SW[0-9]{4}'  regex_string.txt 
+  130  grep '^[0-9]{4}'  regex_string.txt 
+  131  grep '^[0-9]{4}$' regex_string.txt 
+  132  grep '^[1-9][0-9]{3}$' regex_string.txt 
+  133  cat >> regex_string.txt 
+  134  cat regex_string.txt 
+  135  grep 'nishant\>' regex_string.txt 
+  136  grep '</nishant' regex_string.txt 
+  137  grep '\<nishant' regex_string.txt 
+  138  grep '\<nishant\>' regex_string.txt 
+  139  cat >> regex_string.txt 
+  140  grep '\<nishant\>' regex_string.txt 
+  141  grep '\<nishant\>$' regex_string.txt 
+  142  grep '\<nishant\>\s' regex_string.txt 
+  143  grep '\s\<nishant\>\s' regex_string.txt 
+  144  cat >> regex_string.txt 
+  145  grep '\s\<nisGive all the strings which start & end with nishanthant\>\s' regex_string.txt 
+  146  grep '\<nishant\>\s' regex_string.txt 
+  147  cat >> regex_string.txt 
+  148  grep '\<nishant\>\s' regex_string.txt 
+  149  grep '^nishant' regex_string.txt 
+  150  id bash_user
+  151  useradd bash_user
+  152  grep bash /etc/passwd
+  153  grep bash$ /etc/passwd
+  154  grep ^bash /etc/passwd
+  155  history
+  156  grep '\w+@\w+\.\w+' /etc/passwd
+  157  grep '\w\{1,\}@\w\{1,\}\.\w\{1,\}' /etc/passwd
+  158  grep '\w\{1,\}@\w\{1,\}\.\w\{1,\}' regex_string.txt 
+  159  cat >> regex_string.txt 
+  160  cat regex_string.txt 
+  161  grep '\w\{1,\}@\w\{1,\}\.\w\{1,\}' regex_string.txt 
+  162  vim regex_string.txt 
+  163  cat regex_string.txt 
+  164  sed 3d regex_string.txt 
+  165  cat regex_string.txt 
+  166  sed 3,10d regex_string.txt 
+  167  cat regex_string.txt 
+  168  history > bash_command_Day3_4.txt 
+  169  cat bash_command_Day3_4.txt 
+  170  sed s/vimal/nishant regex_string.txt
+  171  sed 's/vimal/nishant' regex_string.txt
+  172  sed -i 's/vimal/nishant' regex_string.txt
+  173  sed 's/vimal/nishant' regex_string.txt 
+  174  sed `s/vimal/nishant` regex_string.txt 
+  175  ls
+  176  sed -i  s/vimal/nishant' regex_string.txt 
+  177  ;
+  178  ;'
+  179  sed -i  's/vimal/nishant' regex_string.txt
+  180  sed -i  's/vimal/nishant/' regex_string.txt
+  181  cat regex_string.txt 
+  182  sed -i  's/nishant/vimal/' regex_string.txt
+  183  cat regex_string.txt 
+  184  sed -i  's/nishant/vimal/g' regex_string.txt
+  185  cat regex_string.txt 
+  186  sed -i  's/vimal/nishant/g' regex_string.txt
+  187  cat regex_string.txt 
+  188  history > bash_command_Day3_4.txt 
+  189  vim bash_command_Day3_4.txt 
+  190  history
+  191  ls
+  192  kill -l
+  193  vim if_server.sh 
+  194  if_server.sh 
+  195  ls -l /tmp/password.txt
+  196  vim if_server.sh 
+  197  ls -l /tmp/password.txt
+  198  if_server.sh 
+  199  ls -l /tmp/password.txt
+  200  vim switch_server.sh 
+  201  switch_server.sh 
+  202  ls -l /tmp/password.txt
+  203  vim switch_server.sh 
+  204  switch_server.sh 
+  205  ls -l /tmp/password.txt
+  206  if_server.sh 
+  207  ls -l /tmp/password.txt
+  208  if_server.sh 
+  209  ls -l /tmp/password.txt
+  210  if_server.sh 
+  211  echo $?
+  212  vim if_server.sh 
+  213  if_server.sh 
+  214  echo $?
+  215  if_server.sh 
+  216  echo $?
+  217  vim switch_server.sh 
+  218  switch_server.sh 
+  219  vim switch_server.sh 
+  220  switch_server.sh 
+  221  echo $?
+  222  switch_server.sh 
+  223  echo $?
+  224  trap -l
+  225  history > bash_command_Day3_4.txt 
+  226  cat bash_command_Day3_4.txt 
+  227  4 + 1
+  228  expr (4 + 1)
+  229  expr 4 + 1
+  230  echo $(( 5 * 5 -2))
+  231  history
+  232  ls
+  233  vim while.sh
+  234  chmod +x while.sh 
+  235  while.sh 5
+  236  vim while.sh
+  237  while.sh 5
+  238  while.sh 10
+  239  lw
+  240  vim while_2.sh
+  241  /bin/bash while_2.sh
+  242  chmod +x  while_2.sh
+  243  while_2.sh
+  244  ls
+  245  vim while_2.sh
+  246  vim while_pingtest.sh
+  247  chmod +x while_pingtest.sh 
+  248  while_pingtest.sh 
+  249  man ls
+  250  ls -a
+  251  ls -al
+  252  ls -ial
+  253  ls -Zial
+  254  ls -ial
+  255  ls -zial
+  256  ls -lZ
+  257  ls -lZ /etc/passwd
+  258  ls -lZ /etc/shadow
+  259  man ls
+  260  ls
+  261  vim test.sh
+  262  chmod +x test.sh 
+  263  test.sh 
+  264  getopt "ab"
+  265  getopt "ab" 5 10
+  266  getopt "ab" -a 
+  267  getopt "ab" -a -l
+  268  getopt "al" -a -l
+  269  getopt "al:s" -a -l
+  270  getopt "al:s" -a -l=3
+  271  vim test.sh 
+  272  test.sh 
+  273  history
+  274  ls
+  275  cat test 
+  276  rm -f test 
+  277  ls
+  278  cd shell_ws/
+  279  ls
+  280  cat test.sh 
+  281  test.sh 
+  282  cd shell_ws/
+  283  vim test.sh 
+  284  test.sh 
+  285  test.sh  -a -n -p
+  286  test.sh  -a -n -p 2222
+  287  vim test.sh 
+  288  test.sh  -a -n -p 2222
+  289  test.sh  -a -n -p 22222
+  290  vim test.sh 
+  291  test.sh 
+  292  test.sh -p 3333
+  293  test.sh -p 3333 -n -a
+  294  useradd jack
+  295  su jack
+  296  su - jack
+  297  ls
+  298  grep -i PermiteRootLogin /etc/ssh/sshd_config 
+  299  grep -i #PermiteRootLogin /etc/ssh/sshd_config 
+  300  grep -i '#PermiteRootLogin' /etc/ssh/sshd_config 
+  301  grep -i 'PermiteRootLogin' /etc/ssh/sshd_config 
+  302  grep -i '#permiterootlogin' /etc/ssh/sshd_config 
+  303  grep -i 'permiterootlogin' /etc/ssh/sshd_config 
+  304  systemctl status sshd
+  305  cd /etc/ssh/
+  306  ls
+  307  vim sshd_config 
+  308  grep -i '#permiterootlogin' /etc/ssh/sshd_config 
+  309  grep -i '#permitrootlogin' /etc/ssh/sshd_config 
+  310  sed -i 's/#PermitRootLogin/PermitRootLogin/' /etc/ssh/sshd_config 
+  311  grep -i '#permitrootlogin' /etc/ssh/sshd_config 
+  312  grep -i 'permitrootlogin' /etc/ssh/sshd_config 
+  313  cd
+  314  cd shell_ws/
+  315  ls
+  316  history >> bash_command_Day3_4.txt 
+    1  history
+    2  history > test
+    3  cat test 
+    4  history -w
+    5  cd /root/shell_ws/
+    6  ls
+    7  bash -c date
+    8  date
+    9  which cat
+   10  ls -l /usr/bin/cat
+   11  user_package_install.sh 
+   12  locate passwd
+   13  locate *.jpg
+   14  touch a{1..10}.jpg
+   15  ls
+   16  locate *.jpg
+   17  find / -n *.jpg
+   18  find / --n *.jpg
+   19  find / --name *.jpg
+   20  find / -name *.jpg
+   21  locate -e  *.jpg
+   22  ls
+   23  test -d /etc/
+   24  test -e /etc/
+   25  nc 8.8.8.8 80
+   26  yum install nc
+   27  nc 8.8.8.8 80
+   28  ls
+   29  rm -f a{1..10}.jpg
+   30  ls
+   31  vim server.sh
+   32  chmod server.sh 
+   33  chmod +x server.sh 
+   34  server.sh 
+   35  server.sh  1
+   36  vim server.sh
+   37  server.sh  1
+   38  server.sh  
+   39  hostname -i
+   40  ifconfig
+   41  vim server.sh
+   42  server.sh  
+   43  vim server.sh
+   44  server.sh  
+   45  vim server.sh
+   46  vim other.sh
+   47  chmod +x other.sh 
+   48  other.sh 
+   49  mv other.sh switch.sh
+   50  ls
+   51  mv server.sh if_server.sh
+   52  ls
+   53  cp if_server.sh switch_server.sh
+   54  ls
+   55  vim switch_server.sh 
+   56  switch_server.sh 
+   57  vim switch_server.sh 
+   58  switch_server.sh 
+   59  grep bash /etc/passwd
+   60  useradd bashuser
+   61  grep bash /etc/passwd
+   62  grep bas$h /etc/passwd
+   63  grep bash$ /etc/passwd
+   64  grep bash$ /etc/passwd | cut -d ":" f5
+   65  grep bash$ /etc/passwd | cut -d ":" f 5
+   66  grep bash$ /etc/passwd | cut -d ":" -f5
+   67  grep bash$ /etc/passwd | cut -d ":" -f6
+   68  grep bash$ /etc/passwd | awk '{ print $6 $7 }'
+   69  grep bash$ /etc/passwd | awk -F: '{ print $6 $7 }'
+   70  grep bash$ /etc/passwd | awk -F: '{ print $6 "  " $7 }'
+   71  ls
+   72  history
+   73  ls
+   74  history > bash_command_Day3&4.txt
+   75  history > bash_command_Day3_4.txt
+   76  ps -aux | grep history
+   77  jobs
+   78  fg
+   79  ls
+   80  rm -f bash_command_Day3
+   81  ls
+   82  cat bash_command_Day3_4.txt 
+   83  cat >> regex_string.txt
+   84  cat regex_string.txt 
+   85  grep b.e regex_string.txt 
+   86  cat >> regex_string.txt 
+   87  cat regex_string.txt 
+   88  grep b.e regex_string.txt 
+   89  grep bye regex_string.txt 
+   90  grep b[Yy]e regex_string.txt 
+   91  grep b[YytT]e regex_string.txt 
+   92  grep b[a-zA-Z0-9#$%,.]e regex_string.txt 
+   93  cat >> regex_string.txt 
+   94  grep b[a-zA-Z0-9#$%,.]e regex_string.txt 
+   95  grep -i bye regex_string.txt 
+   96  grep [Bb][Yy][Ee] regex_string.txt 
+   97  grep b[^0-9]e regex_string.txt 
+   98  grep b[$*]e
+   99  grep b[$*]e regex_string.txt 
+  100  grep b$*e regex_string.txt 
+  101  grep b*e regex_string.txt 
+  102  cat >> regex_string.txt 
+  103  grep b*e regex_string.txt 
+  104  grep b$*e regex_string.txt 
+  105  grep b$$*e regex_string.txt 
+  106  grep b${$*}e regex_string.txt 
+  107  grep b$e regex_string.txt 
+  108  grep 'b$e' regex_string.txt 
+  109  grep 'b$*e' regex_string.txt 
+  110  grep 'b$$*e' regex_string.txt 
+  111  cat regex_string.txt 
+  112  grep 'b$$**e' regex_string.txt 
+  113  grep 'b$$*#e' regex_string.txt 
+  114  grep 'b${2}#e' regex_string.txt 
+  115  cat >> regex_string.txt 
+  116  cat regex_string.txt 
+  117  grep '[0-9]' regex_string.txt 
+  118  grep '[0-9]{}4' regex_string.txt 
+  119  grep '[0-9]{4}' regex_string.txt 
+  120  grep '{0-9}' regex_string.txt 
+  121  grep '{0-9}{0-9}' regex_string.txt 
+  122  grep '{0-9}{0-9}{0-9}' regex_string.txt 
+  123  grep \d\d\d\d[^\d] regex_string.txt 
+  124  grep \d\d\d\d regex_string.txt 
+  125  grep ^SW[0-9]{4}$  regex_string.txt 
+  126  grep '^SW[0-9]{4}$'  regex_string.txt 
+  127  grep '\d\d\d\d' regex_string.txt 
+  128  grep '\d\d\d\d[^\d]' regex_string.txt 
+  129  grep '^SW[0-9]{4}'  regex_string.txt 
+  130  grep '^[0-9]{4}'  regex_string.txt 
+  131  grep '^[0-9]{4}$' regex_string.txt 
+  132  grep '^[1-9][0-9]{3}$' regex_string.txt 
+  133  cat >> regex_string.txt 
+  134  cat regex_string.txt 
+  135  grep 'nishant\>' regex_string.txt 
+  136  grep '</nishant' regex_string.txt 
+  137  grep '\<nishant' regex_string.txt 
+  138  grep '\<nishant\>' regex_string.txt 
+  139  cat >> regex_string.txt 
+  140  grep '\<nishant\>' regex_string.txt 
+  141  grep '\<nishant\>$' regex_string.txt 
+  142  grep '\<nishant\>\s' regex_string.txt 
+  143  grep '\s\<nishant\>\s' regex_string.txt 
+  144  cat >> regex_string.txt 
+  145  grep '\s\<nisGive all the strings which start & end with nishanthant\>\s' regex_string.txt 
+  146  grep '\<nishant\>\s' regex_string.txt 
+  147  cat >> regex_string.txt 
+  148  grep '\<nishant\>\s' regex_string.txt 
+  149  grep '^nishant' regex_string.txt 
+  150  id bash_user
+  151  useradd bash_user
+  152  grep bash /etc/passwd
+  153  grep bash$ /etc/passwd
+  154  grep ^bash /etc/passwd
+  155  history
+  156  grep '\w+@\w+\.\w+' /etc/passwd
+  157  grep '\w\{1,\}@\w\{1,\}\.\w\{1,\}' /etc/passwd
+  158  grep '\w\{1,\}@\w\{1,\}\.\w\{1,\}' regex_string.txt 
+  159  cat >> regex_string.txt 
+  160  cat regex_string.txt 
+  161  grep '\w\{1,\}@\w\{1,\}\.\w\{1,\}' regex_string.txt 
+  162  vim regex_string.txt 
+  163  cat regex_string.txt 
+  164  sed 3d regex_string.txt 
+  165  cat regex_string.txt 
+  166  sed 3,10d regex_string.txt 
+  167  cat regex_string.txt 
+  168  history > bash_command_Day3_4.txt 
+  169  cat bash_command_Day3_4.txt 
+  170  sed s/vimal/nishant regex_string.txt
+  171  sed 's/vimal/nishant' regex_string.txt
+  172  sed -i 's/vimal/nishant' regex_string.txt
+  173  sed 's/vimal/nishant' regex_string.txt 
+  174  sed `s/vimal/nishant` regex_string.txt 
+  175  ls
+  176  sed -i  s/vimal/nishant' regex_string.txt 
+  177  ;
+  178  ;'
+  179  sed -i  's/vimal/nishant' regex_string.txt
+  180  sed -i  's/vimal/nishant/' regex_string.txt
+  181  cat regex_string.txt 
+  182  sed -i  's/nishant/vimal/' regex_string.txt
+  183  cat regex_string.txt 
+  184  sed -i  's/nishant/vimal/g' regex_string.txt
+  185  cat regex_string.txt 
+  186  sed -i  's/vimal/nishant/g' regex_string.txt
+  187  cat regex_string.txt 
+  188  history > bash_command_Day3_4.txt 
+  189  vim bash_command_Day3_4.txt 
+  190  history
+  191  ls
+  192  kill -l
+  193  vim if_server.sh 
+  194  if_server.sh 
+  195  ls -l /tmp/password.txt
+  196  vim if_server.sh 
+  197  ls -l /tmp/password.txt
+  198  if_server.sh 
+  199  ls -l /tmp/password.txt
+  200  vim switch_server.sh 
+  201  switch_server.sh 
+  202  ls -l /tmp/password.txt
+  203  vim switch_server.sh 
+  204  switch_server.sh 
+  205  ls -l /tmp/password.txt
+  206  if_server.sh 
+  207  ls -l /tmp/password.txt
+  208  if_server.sh 
+  209  ls -l /tmp/password.txt
+  210  if_server.sh 
+  211  echo $?
+  212  vim if_server.sh 
+  213  if_server.sh 
+  214  echo $?
+  215  if_server.sh 
+  216  echo $?
+  217  vim switch_server.sh 
+  218  switch_server.sh 
+  219  vim switch_server.sh 
+  220  switch_server.sh 
+  221  echo $?
+  222  switch_server.sh 
+  223  echo $?
+  224  trap -l
+  225  history > bash_command_Day3_4.txt 
+  226  cat bash_command_Day3_4.txt 
+  227  4 + 1
+  228  expr (4 + 1)
+  229  expr 4 + 1
+  230  echo $(( 5 * 5 -2))
+  231  history
+  232  ls
+  233  vim while.sh
+  234  chmod +x while.sh 
+  235  while.sh 5
+  236  vim while.sh
+  237  while.sh 5
+  238  while.sh 10
+  239  lw
+  240  vim while_2.sh
+  241  /bin/bash while_2.sh
+  242  chmod +x  while_2.sh
+  243  while_2.sh
+  244  ls
+  245  vim while_2.sh
+  246  vim while_pingtest.sh
+  247  chmod +x while_pingtest.sh 
+  248  while_pingtest.sh 
+  249  man ls
+  250  ls -a
+  251  ls -al
+  252  ls -ial
+  253  ls -Zial
+  254  ls -ial
+  255  ls -zial
+  256  ls -lZ
+  257  ls -lZ /etc/passwd
+  258  ls -lZ /etc/shadow
+  259  man ls
+  260  ls
+  261  vim test.sh
+  262  chmod +x test.sh 
+  263  test.sh 
+  264  getopt "ab"
+  265  getopt "ab" 5 10
+  266  getopt "ab" -a 
+  267  getopt "ab" -a -l
+  268  getopt "al" -a -l
+  269  getopt "al:s" -a -l
+  270  getopt "al:s" -a -l=3
+  271  vim test.sh 
+  272  test.sh 
+  273  history
+  274  ls
+  275  cat test 
+  276  rm -f test 
+  277  ls
+  278  cd shell_ws/
+  279  ls
+  280  cat test.sh 
+  281  test.sh 
+  282  cd shell_ws/
+  283  vim test.sh 
+  284  test.sh 
+  285  test.sh  -a -n -p
+  286  test.sh  -a -n -p 2222
+  287  vim test.sh 
+  288  test.sh  -a -n -p 2222
+  289  test.sh  -a -n -p 22222
+  290  vim test.sh 
+  291  test.sh 
+  292  test.sh -p 3333
+  293  test.sh -p 3333 -n -a
+  294  useradd jack
+  295  su jack
+  296  su - jack
+  297  ls
+  298  grep -i PermiteRootLogin /etc/ssh/sshd_config 
+  299  grep -i #PermiteRootLogin /etc/ssh/sshd_config 
+  300  grep -i '#PermiteRootLogin' /etc/ssh/sshd_config 
+  301  grep -i 'PermiteRootLogin' /etc/ssh/sshd_config 
+  302  grep -i '#permiterootlogin' /etc/ssh/sshd_config 
+  303  grep -i 'permiterootlogin' /etc/ssh/sshd_config 
+  304  systemctl status sshd
+  305  cd /etc/ssh/
+  306  ls
+  307  vim sshd_config 
+  308  grep -i '#permiterootlogin' /etc/ssh/sshd_config 
+  309  grep -i '#permitrootlogin' /etc/ssh/sshd_config 
+  310  sed -i 's/#PermitRootLogin/PermitRootLogin/' /etc/ssh/sshd_config 
+  311  grep -i '#permitrootlogin' /etc/ssh/sshd_config 
+  312  grep -i 'permitrootlogin' /etc/ssh/sshd_config 
+  313  cd
+  314  cd shell_ws/
+  315  ls
+  316  history >> bash_command_Day3_4.txt 
+  317  cat bash_command
+  318  cat bash_command_Day3_4.txt 
+  319  cut -d " " -f2
+  320  cat  bash_command_Day3_4.txt | cut -d " " -f2 
+  321  cat  bash_command_Day3_4.txt | cut -d " " -f1
+  322  cat  bash_command_Day3_4.txt
+  323  shopt
+  324  shopt -s
+  325  😊
+  326  💋💋💋💋
+  327  shopt
+  328  shopt -s
+  329  shopt cdspell
+  330  shopt -s cdspell
+  331  shopt cdspell
+  332  mkdir /Test
+  333  cd /test
+  334  pwd
+  335  history
+  336  ps -aux | grep bash
+  337  echo $$
+  338  cd /root/shell_ws/
+  339  ls
+  340  vim job1.sh
+  341  chmod +x job1.sh 
+  342  job1.sh 
+  343  vim job1.sh
+  344  job1.sh 
+  345  cp job1.sh job2.sh
+  346  ls
+  347  vim job2.sh 
+  348  job2.sh 
+  349  vim job_parallel.sh
+  350  chmod +x job_parallel.sh 
+  351  job_parallel.sh 
+  352  vim job_parallel.sh
+  353  job_parallel.sh 
+  354  date | awk '{ print $3,$2,$NF}'
+  355  date
+  356  date | awk '{ print $3,$2,$NF, $4}'
+  357  date | awk '{ print $4}'
+  358  while:
+  359  while :; do date | awk '{print $4}'; done
+  360  cd shell_ws/
+  361  vim test.sh 
+  362  test.sh 
+  363  test.sh  -a -n -p
+  364  test.sh  -a -n -p 2222
+  365  vim test.sh 
+  366  test.sh  -a -n -p 2222
+  367  test.sh  -a -n -p 22222
+  368  vim test.sh 
+  369  test.sh 
+  370  test.sh -p 3333
+  371  test.sh -p 3333 -n -a
+  372  useradd jack
+  373  su jack
+  374  su - jack
+  375  ls
+  376  grep -i PermiteRootLogin /etc/ssh/sshd_config 
+  377  grep -i #PermiteRootLogin /etc/ssh/sshd_config 
+  378  grep -i '#PermiteRootLogin' /etc/ssh/sshd_config 
+  379  grep -i 'PermiteRootLogin' /etc/ssh/sshd_config 
+  380  grep -i '#permiterootlogin' /etc/ssh/sshd_config 
+  381  grep -i 'permiterootlogin' /etc/ssh/sshd_config 
+  382  systemctl status sshd
+  383  cd /etc/ssh/
+  384  ls
+  385  vim sshd_config 
+  386  grep -i '#permiterootlogin' /etc/ssh/sshd_config 
+  387  grep -i '#permitrootlogin' /etc/ssh/sshd_config 
+  388  sed -i 's/#PermitRootLogin/PermitRootLogin/' /etc/ssh/sshd_config 
+  389  grep -i '#permitrootlogin' /etc/ssh/sshd_config 
+  390  grep -i 'permitrootlogin' /etc/ssh/sshd_config 
+  391  cd
+  392  cd shell_ws/
+  393  ls
+  394  history >> bash_command_Day3_4.txt 
+  395  cat bash_command
+  396  cat bash_command_Day3_4.txt 
+  397  cut -d " " -f2
+  398  cat  bash_command_Day3_4.txt | cut -d " " -f2 
+  399  cat  bash_command_Day3_4.txt | cut -d " " -f1
+  400  cat  bash_command_Day3_4.txt
+  401  shopt
+  402  shopt -s
+  403  😊
+  404  💋💋💋💋
+  405  shopt
+  406  shopt -s
+  407  shopt cdspell
+  408  shopt -s cdspell
+  409  shopt cdspell
+  410  mkdir /Test
+  411  cd /test
+  412  pwd
+  413  history
+  414  ps -aux | grep bash
+  415  echo $$
+  416  cd /root/shell_ws/
+  417  ls
+  418  vim job1.sh
+  419  chmod +x job1.sh 
+  420  job1.sh 
+  421  vim job1.sh
+  422  job1.sh 
+  423  cp job1.sh job2.sh
+  424  ls
+  425  vim job2.sh 
+  426  job2.sh 
+  427  vim job_parallel.sh
+  428  chmod +x job_parallel.sh 
+  429  job_parallel.sh 
+  430  vim job_parallel.sh
+  431  job_parallel.sh 
+  432  date | awk '{ print $3,$2,$NF}'
+  433  date
+  434  date | awk '{ print $3,$2,$NF, $4}'
+  435  date | awk '{ print $4}'
+  436  while:
+  437  while :; do date | awk '{print $4}'; done
+  438  while :; do date | awk '{print $4}' sleep 1; done
+  439  cd shell_ws/
+  440  vim test.sh 
+  441  test.sh 
+  442  test.sh  -a -n -p
+  443  test.sh  -a -n -p 2222
+  444  vim test.sh 
+  445  test.sh  -a -n -p 2222
+  446  test.sh  -a -n -p 22222
+  447  vim test.sh 
+  448  test.sh 
+  449  test.sh -p 3333
+  450  test.sh -p 3333 -n -a
+  451  useradd jack
+  452  su jack
+  453  su - jack
+  454  ls
+  455  grep -i PermiteRootLogin /etc/ssh/sshd_config 
+  456  grep -i #PermiteRootLogin /etc/ssh/sshd_config 
+  457  grep -i '#PermiteRootLogin' /etc/ssh/sshd_config 
+  458  grep -i 'PermiteRootLogin' /etc/ssh/sshd_config 
+  459  grep -i '#permiterootlogin' /etc/ssh/sshd_config 
+  460  grep -i 'permiterootlogin' /etc/ssh/sshd_config 
+  461  systemctl status sshd
+  462  cd /etc/ssh/
+  463  ls
+  464  vim sshd_config 
+  465  grep -i '#permiterootlogin' /etc/ssh/sshd_config 
+  466  grep -i '#permitrootlogin' /etc/ssh/sshd_config 
+  467  sed -i 's/#PermitRootLogin/PermitRootLogin/' /etc/ssh/sshd_config 
+  468  grep -i '#permitrootlogin' /etc/ssh/sshd_config 
+  469  grep -i 'permitrootlogin' /etc/ssh/sshd_config 
+  470  cd
+  471  cd shell_ws/
+  472  ls
+  473  history >> bash_command_Day3_4.txt 
+  474  cat bash_command
+  475  cat bash_command_Day3_4.txt 
+  476  cut -d " " -f2
+  477  cat  bash_command_Day3_4.txt | cut -d " " -f2 
+  478  cat  bash_command_Day3_4.txt | cut -d " " -f1
+  479  cat  bash_command_Day3_4.txt
+  480  shopt
+  481  shopt -s
+  482  😊
+  483  💋💋💋💋
+  484  shopt
+  485  shopt -s
+  486  shopt cdspell
+  487  shopt -s cdspell
+  488  shopt cdspell
+  489  mkdir /Test
+  490  cd /test
+  491  pwd
+  492  history
+  493  ps -aux | grep bash
+  494  echo $$
+  495  cd /root/shell_ws/
+  496  ls
+  497  vim job1.sh
+  498  chmod +x job1.sh 
+  499  job1.sh 
+  500  vim job1.sh
+  501  job1.sh 
+  502  cp job1.sh job2.sh
+  503  ls
+  504  vim job2.sh 
+  505  job2.sh 
+  506  vim job_parallel.sh
+  507  chmod +x job_parallel.sh 
+  508  job_parallel.sh 
+  509  vim job_parallel.sh
+  510  job_parallel.sh 
+  511  date | awk '{ print $3,$2,$NF}'
+  512  date
+  513  date | awk '{ print $3,$2,$NF, $4}'
+  514  date | awk '{ print $4}'
+  515  while:
+  516  while :; do date | awk '{print $4}'; done
+  517  while :; do date | awk '{print $4}' sleep 1; done
+  518  history
+  519  while :; do date | awk '{ print $4}'; sleep 1; done
+  520  clear
+  521  while :; do date | awk '{ print $4}'; sleep 1; done
+  522  while :; do date | awk '{ print $4 }'; sleep 1; clear; done
+  523  history
+  524  cd shell_ws/
+  525  history >> bash_command_Day3_4.txt 
+    1  history
+    2  history > test
+    3  cat test 
+    4  history -w
+    5  cd /root/shell_ws/
+    6  ls
+    7  bash -c date
+    8  date
+    9  which cat
+   10  ls -l /usr/bin/cat
+   11  user_package_install.sh 
+   12  locate passwd
+   13  locate *.jpg
+   14  touch a{1..10}.jpg
+   15  ls
+   16  locate *.jpg
+   17  find / -n *.jpg
+   18  find / --n *.jpg
+   19  find / --name *.jpg
+   20  find / -name *.jpg
+   21  locate -e  *.jpg
+   22  ls
+   23  test -d /etc/
+   24  test -e /etc/
+   25  nc 8.8.8.8 80
+   26  yum install nc
+   27  nc 8.8.8.8 80
+   28  ls
+   29  rm -f a{1..10}.jpg
+   30  ls
+   31  vim server.sh
+   32  chmod server.sh 
+   33  chmod +x server.sh 
+   34  server.sh 
+   35  server.sh  1
+   36  vim server.sh
+   37  server.sh  1
+   38  server.sh  
+   39  hostname -i
+   40  ifconfig
+   41  vim server.sh
+   42  server.sh  
+   43  vim server.sh
+   44  server.sh  
+   45  vim server.sh
+   46  vim other.sh
+   47  chmod +x other.sh 
+   48  other.sh 
+   49  mv other.sh switch.sh
+   50  ls
+   51  mv server.sh if_server.sh
+   52  ls
+   53  cp if_server.sh switch_server.sh
+   54  ls
+   55  vim switch_server.sh 
+   56  switch_server.sh 
+   57  vim switch_server.sh 
+   58  switch_server.sh 
+   59  grep bash /etc/passwd
+   60  useradd bashuser
+   61  grep bash /etc/passwd
+   62  grep bas$h /etc/passwd
+   63  grep bash$ /etc/passwd
+   64  grep bash$ /etc/passwd | cut -d ":" f5
+   65  grep bash$ /etc/passwd | cut -d ":" f 5
+   66  grep bash$ /etc/passwd | cut -d ":" -f5
+   67  grep bash$ /etc/passwd | cut -d ":" -f6
+   68  grep bash$ /etc/passwd | awk '{ print $6 $7 }'
+   69  grep bash$ /etc/passwd | awk -F: '{ print $6 $7 }'
+   70  grep bash$ /etc/passwd | awk -F: '{ print $6 "  " $7 }'
+   71  ls
+   72  history
+   73  ls
+   74  history > bash_command_Day3&4.txt
+   75  history > bash_command_Day3_4.txt
+   76  ps -aux | grep history
+   77  jobs
+   78  fg
+   79  ls
+   80  rm -f bash_command_Day3
+   81  ls
+   82  cat bash_command_Day3_4.txt 
+   83  cat >> regex_string.txt
+   84  cat regex_string.txt 
+   85  grep b.e regex_string.txt 
+   86  cat >> regex_string.txt 
+   87  cat regex_string.txt 
+   88  grep b.e regex_string.txt 
+   89  grep bye regex_string.txt 
+   90  grep b[Yy]e regex_string.txt 
+   91  grep b[YytT]e regex_string.txt 
+   92  grep b[a-zA-Z0-9#$%,.]e regex_string.txt 
+   93  cat >> regex_string.txt 
+   94  grep b[a-zA-Z0-9#$%,.]e regex_string.txt 
+   95  grep -i bye regex_string.txt 
+   96  grep [Bb][Yy][Ee] regex_string.txt 
+   97  grep b[^0-9]e regex_string.txt 
+   98  grep b[$*]e
+   99  grep b[$*]e regex_string.txt 
+  100  grep b$*e regex_string.txt 
+  101  grep b*e regex_string.txt 
+  102  cat >> regex_string.txt 
+  103  grep b*e regex_string.txt 
+  104  grep b$*e regex_string.txt 
+  105  grep b$$*e regex_string.txt 
+  106  grep b${$*}e regex_string.txt 
+  107  grep b$e regex_string.txt 
+  108  grep 'b$e' regex_string.txt 
+  109  grep 'b$*e' regex_string.txt 
+  110  grep 'b$$*e' regex_string.txt 
+  111  cat regex_string.txt 
+  112  grep 'b$$**e' regex_string.txt 
+  113  grep 'b$$*#e' regex_string.txt 
+  114  grep 'b${2}#e' regex_string.txt 
+  115  cat >> regex_string.txt 
+  116  cat regex_string.txt 
+  117  grep '[0-9]' regex_string.txt 
+  118  grep '[0-9]{}4' regex_string.txt 
+  119  grep '[0-9]{4}' regex_string.txt 
+  120  grep '{0-9}' regex_string.txt 
+  121  grep '{0-9}{0-9}' regex_string.txt 
+  122  grep '{0-9}{0-9}{0-9}' regex_string.txt 
+  123  grep \d\d\d\d[^\d] regex_string.txt 
+  124  grep \d\d\d\d regex_string.txt 
+  125  grep ^SW[0-9]{4}$  regex_string.txt 
+  126  grep '^SW[0-9]{4}$'  regex_string.txt 
+  127  grep '\d\d\d\d' regex_string.txt 
+  128  grep '\d\d\d\d[^\d]' regex_string.txt 
+  129  grep '^SW[0-9]{4}'  regex_string.txt 
+  130  grep '^[0-9]{4}'  regex_string.txt 
+  131  grep '^[0-9]{4}$' regex_string.txt 
+  132  grep '^[1-9][0-9]{3}$' regex_string.txt 
+  133  cat >> regex_string.txt 
+  134  cat regex_string.txt 
+  135  grep 'nishant\>' regex_string.txt 
+  136  grep '</nishant' regex_string.txt 
+  137  grep '\<nishant' regex_string.txt 
+  138  grep '\<nishant\>' regex_string.txt 
+  139  cat >> regex_string.txt 
+  140  grep '\<nishant\>' regex_string.txt 
+  141  grep '\<nishant\>$' regex_string.txt 
+  142  grep '\<nishant\>\s' regex_string.txt 
+  143  grep '\s\<nishant\>\s' regex_string.txt 
+  144  cat >> regex_string.txt 
+  145  grep '\s\<nisGive all the strings which start & end with nishanthant\>\s' regex_string.txt 
+  146  grep '\<nishant\>\s' regex_string.txt 
+  147  cat >> regex_string.txt 
+  148  grep '\<nishant\>\s' regex_string.txt 
+  149  grep '^nishant' regex_string.txt 
+  150  id bash_user
+  151  useradd bash_user
+  152  grep bash /etc/passwd
+  153  grep bash$ /etc/passwd
+  154  grep ^bash /etc/passwd
+  155  history
+  156  grep '\w+@\w+\.\w+' /etc/passwd
+  157  grep '\w\{1,\}@\w\{1,\}\.\w\{1,\}' /etc/passwd
+  158  grep '\w\{1,\}@\w\{1,\}\.\w\{1,\}' regex_string.txt 
+  159  cat >> regex_string.txt 
+  160  cat regex_string.txt 
+  161  grep '\w\{1,\}@\w\{1,\}\.\w\{1,\}' regex_string.txt 
+  162  vim regex_string.txt 
+  163  cat regex_string.txt 
+  164  sed 3d regex_string.txt 
+  165  cat regex_string.txt 
+  166  sed 3,10d regex_string.txt 
+  167  cat regex_string.txt 
+  168  history > bash_command_Day3_4.txt 
+  169  cat bash_command_Day3_4.txt 
+  170  sed s/vimal/nishant regex_string.txt
+  171  sed 's/vimal/nishant' regex_string.txt
+  172  sed -i 's/vimal/nishant' regex_string.txt
+  173  sed 's/vimal/nishant' regex_string.txt 
+  174  sed `s/vimal/nishant` regex_string.txt 
+  175  ls
+  176  sed -i  s/vimal/nishant' regex_string.txt 
+  177  ;
+  178  ;'
+  179  sed -i  's/vimal/nishant' regex_string.txt
+  180  sed -i  's/vimal/nishant/' regex_string.txt
+  181  cat regex_string.txt 
+  182  sed -i  's/nishant/vimal/' regex_string.txt
+  183  cat regex_string.txt 
+  184  sed -i  's/nishant/vimal/g' regex_string.txt
+  185  cat regex_string.txt 
+  186  sed -i  's/vimal/nishant/g' regex_string.txt
+  187  cat regex_string.txt 
+  188  history > bash_command_Day3_4.txt 
+  189  vim bash_command_Day3_4.txt 
+  190  history
+  191  ls
+  192  kill -l
+  193  vim if_server.sh 
+  194  if_server.sh 
+  195  ls -l /tmp/password.txt
+  196  vim if_server.sh 
+  197  ls -l /tmp/password.txt
+  198  if_server.sh 
+  199  ls -l /tmp/password.txt
+  200  vim switch_server.sh 
+  201  switch_server.sh 
+  202  ls -l /tmp/password.txt
+  203  vim switch_server.sh 
+  204  switch_server.sh 
+  205  ls -l /tmp/password.txt
+  206  if_server.sh 
+  207  ls -l /tmp/password.txt
+  208  if_server.sh 
+  209  ls -l /tmp/password.txt
+  210  if_server.sh 
+  211  echo $?
+  212  vim if_server.sh 
+  213  if_server.sh 
+  214  echo $?
+  215  if_server.sh 
+  216  echo $?
+  217  vim switch_server.sh 
+  218  switch_server.sh 
+  219  vim switch_server.sh 
+  220  switch_server.sh 
+  221  echo $?
+  222  switch_server.sh 
+  223  echo $?
+  224  trap -l
+  225  history > bash_command_Day3_4.txt 
+  226  cat bash_command_Day3_4.txt 
+  227  4 + 1
+  228  expr (4 + 1)
+  229  expr 4 + 1
+  230  echo $(( 5 * 5 -2))
+  231  history
+  232  ls
+  233  vim while.sh
+  234  chmod +x while.sh 
+  235  while.sh 5
+  236  vim while.sh
+  237  while.sh 5
+  238  while.sh 10
+  239  lw
+  240  vim while_2.sh
+  241  /bin/bash while_2.sh
+  242  chmod +x  while_2.sh
+  243  while_2.sh
+  244  ls
+  245  vim while_2.sh
+  246  vim while_pingtest.sh
+  247  chmod +x while_pingtest.sh 
+  248  while_pingtest.sh 
+  249  man ls
+  250  ls -a
+  251  ls -al
+  252  ls -ial
+  253  ls -Zial
+  254  ls -ial
+  255  ls -zial
+  256  ls -lZ
+  257  ls -lZ /etc/passwd
+  258  ls -lZ /etc/shadow
+  259  man ls
+  260  ls
+  261  vim test.sh
+  262  chmod +x test.sh 
+  263  test.sh 
+  264  getopt "ab"
+  265  getopt "ab" 5 10
+  266  getopt "ab" -a 
+  267  getopt "ab" -a -l
+  268  getopt "al" -a -l
+  269  getopt "al:s" -a -l
+  270  getopt "al:s" -a -l=3
+  271  vim test.sh 
+  272  test.sh 
+  273  history
+  274  ls
+  275  cat test 
+  276  rm -f test 
+  277  ls
+  278  cd shell_ws/
+  279  ls
+  280  cat test.sh 
+  281  test.sh 
+  282  cd shell_ws/
+  283  vim test.sh 
+  284  test.sh 
+  285  test.sh  -a -n -p
+  286  test.sh  -a -n -p 2222
+  287  vim test.sh 
+  288  test.sh  -a -n -p 2222
+  289  test.sh  -a -n -p 22222
+  290  vim test.sh 
+  291  test.sh 
+  292  test.sh -p 3333
+  293  test.sh -p 3333 -n -a
+  294  useradd jack
+  295  su jack
+  296  su - jack
+  297  ls
+  298  grep -i PermiteRootLogin /etc/ssh/sshd_config 
+  299  grep -i #PermiteRootLogin /etc/ssh/sshd_config 
+  300  grep -i '#PermiteRootLogin' /etc/ssh/sshd_config 
+  301  grep -i 'PermiteRootLogin' /etc/ssh/sshd_config 
+  302  grep -i '#permiterootlogin' /etc/ssh/sshd_config 
+  303  grep -i 'permiterootlogin' /etc/ssh/sshd_config 
+  304  systemctl status sshd
+  305  cd /etc/ssh/
+  306  ls
+  307  vim sshd_config 
+  308  grep -i '#permiterootlogin' /etc/ssh/sshd_config 
+  309  grep -i '#permitrootlogin' /etc/ssh/sshd_config 
+  310  sed -i 's/#PermitRootLogin/PermitRootLogin/' /etc/ssh/sshd_config 
+  311  grep -i '#permitrootlogin' /etc/ssh/sshd_config 
+  312  grep -i 'permitrootlogin' /etc/ssh/sshd_config 
+  313  cd
+  314  cd shell_ws/
+  315  ls
+  316  history >> bash_command_Day3_4.txt 
+  317  cat bash_command
+  318  cat bash_command_Day3_4.txt 
+  319  cut -d " " -f2
+  320  cat  bash_command_Day3_4.txt | cut -d " " -f2 
+  321  cat  bash_command_Day3_4.txt | cut -d " " -f1
+  322  cat  bash_command_Day3_4.txt
+  323  shopt
+  324  shopt -s
+  325  😊
+  326  💋💋💋💋
+  327  shopt
+  328  shopt -s
+  329  shopt cdspell
+  330  shopt -s cdspell
+  331  shopt cdspell
+  332  mkdir /Test
+  333  cd /test
+  334  pwd
+  335  history
+  336  ps -aux | grep bash
+  337  echo $$
+  338  cd /root/shell_ws/
+  339  ls
+  340  vim job1.sh
+  341  chmod +x job1.sh 
+  342  job1.sh 
+  343  vim job1.sh
+  344  job1.sh 
+  345  cp job1.sh job2.sh
+  346  ls
+  347  vim job2.sh 
+  348  job2.sh 
+  349  vim job_parallel.sh
+  350  chmod +x job_parallel.sh 
+  351  job_parallel.sh 
+  352  vim job_parallel.sh
+  353  job_parallel.sh 
+  354  date | awk '{ print $3,$2,$NF}'
+  355  date
+  356  date | awk '{ print $3,$2,$NF, $4}'
+  357  date | awk '{ print $4}'
+  358  while:
+  359  while :; do date | awk '{print $4}'; done
+  360  cd shell_ws/
+  361  vim test.sh 
+  362  test.sh 
+  363  test.sh  -a -n -p
+  364  test.sh  -a -n -p 2222
+  365  vim test.sh 
+  366  test.sh  -a -n -p 2222
+  367  test.sh  -a -n -p 22222
+  368  vim test.sh 
+  369  test.sh 
+  370  test.sh -p 3333
+  371  test.sh -p 3333 -n -a
+  372  useradd jack
+  373  su jack
+  374  su - jack
+  375  ls
+  376  grep -i PermiteRootLogin /etc/ssh/sshd_config 
+  377  grep -i #PermiteRootLogin /etc/ssh/sshd_config 
+  378  grep -i '#PermiteRootLogin' /etc/ssh/sshd_config 
+  379  grep -i 'PermiteRootLogin' /etc/ssh/sshd_config 
+  380  grep -i '#permiterootlogin' /etc/ssh/sshd_config 
+  381  grep -i 'permiterootlogin' /etc/ssh/sshd_config 
+  382  systemctl status sshd
+  383  cd /etc/ssh/
+  384  ls
+  385  vim sshd_config 
+  386  grep -i '#permiterootlogin' /etc/ssh/sshd_config 
+  387  grep -i '#permitrootlogin' /etc/ssh/sshd_config 
+  388  sed -i 's/#PermitRootLogin/PermitRootLogin/' /etc/ssh/sshd_config 
+  389  grep -i '#permitrootlogin' /etc/ssh/sshd_config 
+  390  grep -i 'permitrootlogin' /etc/ssh/sshd_config 
+  391  cd
+  392  cd shell_ws/
+  393  ls
+  394  history >> bash_command_Day3_4.txt 
+  395  cat bash_command
+  396  cat bash_command_Day3_4.txt 
+  397  cut -d " " -f2
+  398  cat  bash_command_Day3_4.txt | cut -d " " -f2 
+  399  cat  bash_command_Day3_4.txt | cut -d " " -f1
+  400  cat  bash_command_Day3_4.txt
+  401  shopt
+  402  shopt -s
+  403  😊
+  404  💋💋💋💋
+  405  shopt
+  406  shopt -s
+  407  shopt cdspell
+  408  shopt -s cdspell
+  409  shopt cdspell
+  410  mkdir /Test
+  411  cd /test
+  412  pwd
+  413  history
+  414  ps -aux | grep bash
+  415  echo $$
+  416  cd /root/shell_ws/
+  417  ls
+  418  vim job1.sh
+  419  chmod +x job1.sh 
+  420  job1.sh 
+  421  vim job1.sh
+  422  job1.sh 
+  423  cp job1.sh job2.sh
+  424  ls
+  425  vim job2.sh 
+  426  job2.sh 
+  427  vim job_parallel.sh
+  428  chmod +x job_parallel.sh 
+  429  job_parallel.sh 
+  430  vim job_parallel.sh
+  431  job_parallel.sh 
+  432  date | awk '{ print $3,$2,$NF}'
+  433  date
+  434  date | awk '{ print $3,$2,$NF, $4}'
+  435  date | awk '{ print $4}'
+  436  while:
+  437  while :; do date | awk '{print $4}'; done
+  438  while :; do date | awk '{print $4}' sleep 1; done
+  439  cd shell_ws/
+  440  vim test.sh 
+  441  test.sh 
+  442  test.sh  -a -n -p
+  443  test.sh  -a -n -p 2222
+  444  vim test.sh 
+  445  test.sh  -a -n -p 2222
+  446  test.sh  -a -n -p 22222
+  447  vim test.sh 
+  448  test.sh 
+  449  test.sh -p 3333
+  450  test.sh -p 3333 -n -a
+  451  useradd jack
+  452  su jack
+  453  su - jack
+  454  ls
+  455  grep -i PermiteRootLogin /etc/ssh/sshd_config 
+  456  grep -i #PermiteRootLogin /etc/ssh/sshd_config 
+  457  grep -i '#PermiteRootLogin' /etc/ssh/sshd_config 
+  458  grep -i 'PermiteRootLogin' /etc/ssh/sshd_config 
+  459  grep -i '#permiterootlogin' /etc/ssh/sshd_config 
+  460  grep -i 'permiterootlogin' /etc/ssh/sshd_config 
+  461  systemctl status sshd
+  462  cd /etc/ssh/
+  463  ls
+  464  vim sshd_config 
+  465  grep -i '#permiterootlogin' /etc/ssh/sshd_config 
+  466  grep -i '#permitrootlogin' /etc/ssh/sshd_config 
+  467  sed -i 's/#PermitRootLogin/PermitRootLogin/' /etc/ssh/sshd_config 
+  468  grep -i '#permitrootlogin' /etc/ssh/sshd_config 
+  469  grep -i 'permitrootlogin' /etc/ssh/sshd_config 
+  470  cd
+  471  cd shell_ws/
+  472  ls
+  473  history >> bash_command_Day3_4.txt 
+  474  cat bash_command
+  475  cat bash_command_Day3_4.txt 
+  476  cut -d " " -f2
+  477  cat  bash_command_Day3_4.txt | cut -d " " -f2 
+  478  cat  bash_command_Day3_4.txt | cut -d " " -f1
+  479  cat  bash_command_Day3_4.txt
+  480  shopt
+  481  shopt -s
+  482  😊
+  483  💋💋💋💋
+  484  shopt
+  485  shopt -s
+  486  shopt cdspell
+  487  shopt -s cdspell
+  488  shopt cdspell
+  489  mkdir /Test
+  490  cd /test
+  491  pwd
+  492  history
+  493  ps -aux | grep bash
+  494  echo $$
+  495  cd /root/shell_ws/
+  496  ls
+  497  vim job1.sh
+  498  chmod +x job1.sh 
+  499  job1.sh 
+  500  vim job1.sh
+  501  job1.sh 
+  502  cp job1.sh job2.sh
+  503  ls
+  504  vim job2.sh 
+  505  job2.sh 
+  506  vim job_parallel.sh
+  507  chmod +x job_parallel.sh 
+  508  job_parallel.sh 
+  509  vim job_parallel.sh
+  510  job_parallel.sh 
+  511  date | awk '{ print $3,$2,$NF}'
+  512  date
+  513  date | awk '{ print $3,$2,$NF, $4}'
+  514  date | awk '{ print $4}'
+  515  while:
+  516  while :; do date | awk '{print $4}'; done
+  517  while :; do date | awk '{print $4}' sleep 1; done
+  518  history
+  519  while :; do date | awk '{ print $4}'; sleep 1; done
+  520  clear
+  521  while :; do date | awk '{ print $4}'; sleep 1; done
+  522  while :; do date | awk '{ print $4 }'; sleep 1; clear; done
+  523  history
+  524  cd shell_ws/
+  525  history >> bash_command_Day3_4.txt 
+  526  while :; do date | awk '{ print $4 }'; sleep 1; clear; done
+  527  cat /etc/passwd
+  528  su - jack
+  529  su jack
+  530  date
+  531  date > t.txt
+  532  cat t.txt 
+  533  date | tee a.txt
+  534  cat a.txt 
+  535  #SHELL
+  536  echo $SHELL
+  537  rm -f t.txt 
+  538  rm -f a.txt 
+  539  ls
+  540  while :; do date | awk '{ print $4 }'; sleep 1; clear; done
+  541  cat /etc/passwd | awk '$3 >= 1000{ print $1, $2 }'
+  542  cat /etc/passwd | awk -F: '$3 >= 1000{ print $1, $2 }'
+  543  cat /etc/passwd | awk -F: '$3 >= 1000{ print $1, $3 }'
+  544  cat /etc/passwd | awk -F: '$3 >= 1000 { print USER   UID }{ print $1, $3 }'
+  545  cat /etc/passwd | awk -F: '$3 >= 1000 { print "USER   UID" }{ print $1, $3 }'
+  546  cat /etc/passwd | awk -F: '{ print "USER   UID" } $3>=1000 { print $1, $3 }'
+  547  cat /etc/passwd | awk -F: 'BEGIN { print "USER   UID" } $3>=1000 { print $1, $3 }'
+  548  cat /etc/passwd | awk -F: 'BEGIN $3 >= 1000 { print "USER   UID" }{ print $1, $3 }'
+  549  cat /etc/passwd | awk -F: '$3 >= 1000 BEGIN { print "USER   UID" }{ print $1, $3 }'
+  550  cat /etc/passwd | awk -F: 'BEGIN { print "USER   UID" } $3>=1000 { print $1, $3 }'
+  551  cat /etc/passwd | awk -F: '{ print $7 }' | sort | uniq
+  552  cat /etc/passwd | awk -F: '{ print $7 }' | sort | uniq -c
+  553  cat /etc/passwd | awk -F: '{ print $7 }' | sort | uniq -c | sort 
+  554  cat /etc/passwd | awk -F: '{ print $7 }' | sort | uniq -c | sort -n
+  555  ls
+  556  vim questions_Day3_4.txt
+  557  cat question.txt 
+  558  rm -f question.txt 
+  559  vim questions_Day_1_2.txt
+  560  cat questions_Day_1_2.txt 
+  561  ls
+  562  mv questions_Day3_4.txt questions_Day_3_4.txt
+  563  ls
+  564  history >> bash_command_Day3_4.txt 

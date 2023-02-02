@@ -1,0 +1,311 @@
+cut -f 1 -d ":" /etc/passwd
+cut -f 6 -d ":" /etc/passwd
+grep ^a: /etc/passwd | cut -f 1 -d ":"
+x=$(grep ^a: /etc/passwd | cut -f 1 -d ":")
+echo $x
+
+============================
+-e => file exist or not
+
+test -e /root/a
+echo $?  => checking last command failed or passed
+test -e /root/shell_ws/
+echo $?  => checking last command failed or passed
+
+=============================
+
+x="jack"
+echo $x
+echo $xyz
+echo ${x}yz
+
+============================
+
+Question: Analyzing the access_log of httpd & diffrence between cut & awk command.
+cut -f 1 -d " " access_log
+cut -f 6 -d " " access_log
+awk '{ print $1 }' access_log
+awk -F: '{ print $1 " " $6 }' /etc/passwd
+awk '{ print $1 }' access_log  | wc -l
+awk '{ print $1 }' access_log  
+awk '{ print $1 }' access_log  | sort
+awk '{ print $1 }' access_log  | uniq
+awk '{ print $1 }' access_log  | uniq | wc -l
+awk '{ print $1 }' access_log  | uniq | sort| wc -l
+awk '{ print $1 }' access_log  | uniq | sort| 
+awk '{ print $1 }' access_log  | uniq | sort 
+awk '{ print $1 }' access_log  |  sort | uniq
+awk '{ print $1 }' access_log  |  sort | uniq -c
+awk '{ print $1 }' access_log  |  sort | uniq
+awk '{ print $1 }' access_log  |  sort | uniq -c
+awk '{ print $1 }' access_log  |  sort | uniq -c | sort -n
+awk '{ print $1 }' access_log  |  sort | uniq -c | sort -n -k1
+awk '{ print $1 }' access_log  |  sort | uniq -c | sort -n -k1 | tail
+awk '{ print $1 }' access_log  |  sort | uniq -c | sort -n -k1 | tail -1
+awk '{ print $1 }' access_log  |  sort | uniq -c | sort -n -k1 | tail -2
+
+==================================
+
+Question: find the occurance of words in any file.
+
+cat bash_command.txt | tr 'a-z' 'A-Z'
+cat bash_command.txt 
+cat bash_command.txt | tr ' ' '\n'
+cat bash_command.txt | tr -s ' ' '\n' 
+cat bash_command.txt | tr -s ' ' '\n' | uniq 
+cat bash_command.txt | tr -s ' ' '\n' | uniq -c
+cat bash_command.txt | tr -s ' ' '\n' | sort | uniq -c
+cat bash_command.txt | tr -s ' ' '\n' | sort | uniq -c | sort -n
+cat bash_command.txt | tr -s ' ' '\n' | sort | uniq -c | sort -n | awk '{ print $1 }'
+cat bash_command.txt | tr -s ' ' '\n' | sort | uniq -c | sort -n | awk '{ print $2 }'
+cat bash_command.txt | tr -s ' ' '\n' | sort | uniq -c | sort -n | awk '{ print $0 }'
+cat bash_command.txt | tr -s ' ' '\n' | sort | uniq -c | sort -n | awk '{ print $3 }'
+cat bash_command.txt | tr -s ' ' '\n' | sort | uniq -c | sort -n | awk '{ print $1 }'
+cat bash_command.txt | tr -s ' ' '\n' | sort | uniq -c | sort -n | awk '{ print $1 }' | tail -10
+cat bash_command.txt | tr -s ' ' '\n' | sort | uniq -c | sort -n | awk '{ print $2,$1 }' | tail -10
+cat bash_command.txt | tr -s ' ' '\n' | sort | uniq -c | sort -n | awk '{ print $2 " " $1 }' | tail -10
+cat bash_command.txt | tr -s ' ' '\n' | sort | uniq -c | sort -n | awk '{ print $2 "=> " $1 }' | tail -10
+
+====================================
+Question. Add the path
+
+echo $PATH
+PATH=$PATH:/root/shell_ws/
+echo $PATH
+
+========================================
+
+Question: Manipulate the exit code of any command
+
+lw() { echo "Hi"; }
+lw
+lw() { date; }
+lw
+echo $?
+lw() { date; return 11; }
+lw
+echo $?
+
+========================================
+
+Question: Create multiple tables with single command & remove it in one go.
+
+touch {1..100}.txt
+touch a.{1..100}.txt
+ls
+rm -f a.{10..90}.txt
+ls
+rm -f a.{1..9}.txt
+rm -f a.{1..100}.txt
+ls
+for i in a.*.txt; do echo $i; done
+for i in a.*.txt; do echo $i; done | wc -l
+for i in a.*.txt; do ls -l $i; done
+for i in a.*.txt; do ls -l $i; done | awk '{ print $1 " " $3 " " $4 " " $9}'
+
+========================================
+
+Question: Find the word count line by line.
+
+NR => add the line number & NF => count the words line by line.
+
+awk '{ print NF }' script.sh 
+awk '{ print NF-1 }' script.sh
+awk '{ print $(NF) }' script.sh => It will give last work of every line.
+awk 'NF==3 { print NF, $(NF) }' script.sh => It will give that line (word) only which have same 3 words in that line. 
+awk '{ print NR, NF, $(NF) }' script.sh   
+awk 'NF > 0{ print NR " " NF " " $(NF)}' script.sh
+awk 'NF > 0{ print NR " " NF " " $(NF)}' script.sh | wc -l
+awk 'NF == 0{ print NR " " NF " " $(NF)}' script.sh | wc -l
+
+========================================
+awk 'BEGIN { for (i=1;i<=10;i++) print i }'
+awk 'BEGIN { for (i=1;i<=10;i++) print i*3 }' => print table
+
+======================================
+
+Question: Setting the password for any user.
+
+echo redhat12 | passwd --stdin a
+awk '/an/ { print }' /etc/passwd
+awk '/^a/ { print }' /etc/passwd
+awk '/^a:/ { print }' /etc/passwd
+
+
+=====================================
+
+Question: Change some string from old to new in particular place in file.
+sed -i 's/1010/1100/g' /etc/passwd
+
+=====================================
+
+Question: To check the set value.
+
+vimal="lw"
+set | grep vimal
+
+====================================
+
+Question: To print number of times ping command.
+ping -c 1 www.google.com => It will print only 1 time
+ping -c 5 8.8.8.8 => It will print only 5 times
+
+=======================================
+
+Question: And loop
+
+#!/bin/bash
+
+read  a
+read  b
+read  c
+read  d
+
+if [ $a -eq "0" -a $b -eq "0" -a $c -eq "0" -a $d -eq "0" ]; then
+echo "We are fine"
+else
+echo "We are not fine"
+fi
+
+======================================
+
+Question: Or loop
+
+#!/bin/bash
+
+read  a
+read  b
+read  c
+read  d
+
+if [ $a -eq "0" -o $b -eq "0" -o $c -eq "0" -o $d -eq "0" ]; then
+echo "We are fine"
+else
+echo "We are not fine"
+fi
+
+====================================
+
+Question: To check last command ran successfully or not.
+test $? -eq 0 && echo "last command is executed successfully."
+test $? -eq 0 && echo "last command is executed successfully." || echo "failed becuase of some error."
+
+===================================
+
+Question: To check some file have the read permission or not.
+test -r /etc/passwd && echo "allowed" || echo "not allowed"
+test -r /etc/shadow && echo "allowed" || echo "not allowed"
+
+===================================
+
+Question: How to set bydefault values.
+#!/bin/bash
+
+echo -n "Enter your name: "
+read myname
+
+#x=${myname:-nishant}
+#x=${myname:=nishant}
+#x=${myname:+nishant}
+x=${myname+singh}
+
+echo "your name is $x."
+====================================
+
+Question: some trick 
+x=vimal
+echo $x
+echo ${x}
+echo ${x}daga
+echo ${x} daga
+echo ${x^} daga => Vimal daga (First letter capital)
+echo ${x^^} daga => VIMAL daga (All letter capital)
+
+y=VImal
+echo $y
+echo ${y}
+echo ${y,}  => vImal (First capital letter convert into small letter)
+echo ${y,,} => vimal (All capital letter convert into small letter)
+
+x=nishanttt
+echo $x
+exho ${x}
+echo ${x}
+echo ${x%}
+echo ${x%t}
+echo ${x%td}
+echo ${x%tt}
+echo ${x%tt} singh
+
+x="one/two/three/four/hello.txt"
+echo $x
+echo ${x}
+echo ${x%.txt}
+echo ${x%.txt}.html
+echo ${x%.*}.html
+
+y="http://www.google.com:443/data/hello.html"
+echo $y
+echo ${y}
+echo ${y%}
+echo ${y%/} => http://www.google.com:443/data/hello.html
+echo ${y%/*} => http://www.google.com:443/data
+echo ${y%/*/*} => http://www.google.com:443
+echo ${y%/*/*/*} => http:/
+echo ${y%/*/*} => http://www.google.com:443
+echo ${y%:*/*/*} => http://www.google.com
+
+=====================================
+
+env
+echo $BASH_VERSION
+echo {1..100} or echo {1..100..1} => increment by 1.
+echo {1..100..2} => increment by 2.
+
+s=linuxworld
+echo $s
+echo ${s}
+echo ${s^}
+echo ${s^^}
+echo ${s,}
+echo ${s}
+echo ${s:0:1}
+echo ${s:0:5}  => give 0 to 5 string values
+echo ${s:0:10} => give 0 to 10 string values
+echo ${s:5:5}  => give 5 to 10.
+Here first expression is string, second is index and third is length.
+
+a="/a/b/c/d/hello.txt"
+echo $a
+echo ${a}
+echo ${a##*/a} => /b/c/d/hello.txt
+echo ${a##*/b} => /c/d/hello.txt
+echo ${a##*/d} => /hello.txt
+echo ${a##*/d/} => hello.txt
+
+========================================
+
+Question: Array example
+a=(abhi nishant nidhi nitya)
+echo $a
+echo ${a}
+echo ${a[0]}
+echo ${a[1]}
+echo ${a[2]}
+echo ${a[3]}
+echo ${a[4]}
+echo ${a[@]} => It will print complete array.
+
+======================================
+
+change terminal colors:
+
+tput setaf 1
+tput setaf 2
+tput setab 1 => change background of the terminal
+
+=====================================
+
+echo -e "line \nnew line" => giving new line escape sequence
+
+

@@ -1,0 +1,1000 @@
+  136  git log
+  137  git switch master
+  138  git log
+  139  history
+  140  ls
+  141  history > Git_merge_squash_command.txt
+  142  cat Git_merge_squash_command.txt 
+  143  ls
+  144  git push
+  145  ls
+  146  git branch
+  147  git swatch dev
+  148  ls
+  149  git switch dev
+  150  ls
+  151  git push
+  152  git status
+  153  git add .
+  154  git commit -m "Git_Merge_Squash_Command" Git_merge_squash_command.txt 
+  155  git push
+  156  git switch master
+  157  git status
+  158  git push
+  159  git config --global --list
+  160  git remote -v
+  161  git merge dev
+  162  ls
+  163  cat Git_merge_squash_command.txt 
+  164  git branch
+  165  git switch dev
+  166  git branch
+  167  git log
+  168  git push
+  169  history
+  170  ls
+  171  git branch
+  172  cat /etc/passwd
+  173  ls
+  174  cd git_ws/
+  175  ls
+  176  cd Git_Jan2023_Practice_2
+  177  ls
+  178  cat a.txt 
+  179  cd ..
+  180  ls
+  181  mkdir init Git_Jan2023_Practice_3
+  182  ls
+  183  cd Git_Jan2023_Practice_3
+  184  pwd
+  185  ls
+  186  git init 
+  187  ls -a
+  188  cat > code.html
+  189  cat code.html 
+  190  rmdir init
+  191  ls
+  192  git log
+  193  git status
+  194  ls
+  195  cat code.html 
+  196  git status
+  197  git add code.html 
+  198  git status
+  199  ls
+  200  git ls-files
+  201  git ls-tree HEAD
+  202  git commit -m "first commit" code.html 
+  203  git ls-tree HEAD
+  204  git log
+  205  ls
+  206  cat >> code.html
+  207  cat code.html 
+  208  git status
+  209  git add .
+  210  git status
+  211  git commit -m "second commit" code.html 
+  212  git ls-tree HEAD
+  213  git log
+  214  git diff 50229c318669d6f72a264e2e45d54a064b61a01d  11c347747ba5fefd715ab7b9ebab5f6a3edb168e
+  215  git diff 11c347747ba5fefd715ab7b9ebab5f6a3edb168e 50229c318669d6f72a264e2e45d54a064b61a01d
+  216  ls
+  217  cat >> code.html 
+  218  cat code.html 
+  219  git status
+  220  git add code.html 
+  221  git status
+  222  git commit -m "third commit" code.html 
+  223  git log
+  224  git cat-file 775a4a6f368d58036fd544dd4c63f7b1c4a20b76
+  225  git cat-file -p  775a4a6f368d58036fd544dd4c63f7b1c4a20b76
+  226  git log
+  227  git cat-file -p  775a4a6f368d58036fd544dd4c63f7b1c4a20b76
+  228  git cat-file -p   11c347747ba5fefd715ab7b9ebab5f6a3edb168e
+  229  git log
+  230  git diff 11c347747ba5fefd715ab7b9ebab5f6a3edb168e 775a4a6f368d58036fd544dd4c63f7b1c4a20b76
+  231  git diff 50229c318669d6f72a264e2e45d54a064b61a01d 775a4a6f368d58036fd544dd4c63f7b1c4a20b76
+  232  pwd
+  233  cd 
+  234  ls
+  235  cd git_ws/
+  236  ls
+  237  rmdir init
+  238  ls
+  239  ssh-keygen 
+  240  cat /root/.ssh/id_rsa.pub
+  241  ssh -T git@github.com
+  242  cat 'abc'
+  243  echo abc
+  244  ls
+  245  mkdir Git_Jan2023_Practice_4
+  246  ls
+  247  cd Git_Jan2023_Practice_4
+  248  git init
+  249  ls
+  250  ls -a
+  251  cat > a.txt
+  252  cat a.txt 
+  253  git status
+  254  git add .
+  255  git status
+  256  git rm --cached a.txt 
+  257  git status
+  258  git add .
+  259  git status
+  260  git branch
+  261  git commit -m "commit from master" a.txt 
+  262  git branch
+  263  git log
+  264  git checkout -b dev1
+  265  git branch
+  266  ls
+  267  git checkout -b dev2
+  268  git branch
+  269  git remote
+  270  git remote -v
+  271  git remote add mynishant git@github.com:Nishantsingh70/Git_Jan2023_Practice_2.git
+  272  git remote -v
+  273  git remote
+  274  git remote show mynishant
+  275  git branch
+  276  git push
+  277  git push --set-upstream mynishant dev2
+  278  git switch dev1
+  279  git branch
+  280  git push
+  281  git push --set-upstream mynishant dev1
+  282  git switch master 
+  283  git push --set-upstream mynishant master
+  284  git switch dev1
+  285  git branch
+  286  ls
+  287  cat >> a.txt 
+  288  cat a.txt 
+  289  git status
+  290  git add .
+  291  git status
+  292  git log
+  293  git commit -m "update by dev1" a.txt 
+  294  git log
+  295  git push
+  296  git switch dev2
+  297  git branch
+  298  ls
+  299  cat >> a.txt 
+  300  cat a.txt 
+  301  git status
+  302  git add .
+  303  git status
+  304  git log
+  305  git commit -m "update by dev2" a.txt 
+  306  git log
+  307  git push
+  308  git switch master
+  309  git branch
+  310  git merge dev1
+  311  ls
+  312  cat a.txt 
+  313  git log
+  314  git push
+  315  git log
+  316  git switch dev2
+  317  git branch all
+  318  git branch --all
+  319  git branch show
+  320  git branch -a
+  321  git branch 
+  322  git log
+  323  git push 
+  324  git switch master
+  325  git branch
+  326  git merge dev2
+  327  git switch dev2
+  328  git pull
+  329  ls
+  330  cat a.txt 
+  331  git push
+  332  git status
+  333  git pull --help
+  334  git fetch
+  335  git fetch mynishant
+  336  git branch
+  337  git switch dev2
+  338  git branch
+  339  git merge --quit
+  340  git branch
+  341  git switch dev2
+  342  git branch
+  343  ls
+  344  cat a.txt 
+  345  vi a.txt 
+  346  cat a.txt 
+  347  git branch
+  348  git switch dev2
+  349  git checout dev2
+  350  git checkout dev2
+  351  git log
+  352  git merge dev2
+  353  cat a.txt 
+  354  git switch dev1
+  355  git merge --quit
+  356  git switch dev1
+  357  ls
+  358  git status
+  359  git add .
+  360  git commit -m "update by master" a.txt 
+  361  git log
+  362  git switch dev2
+  363  ls
+  364  git a
+  365  cat a.txt 
+  366  git pull mynishant master
+  367  git config pull.rebase false
+  368  ls
+  369  cat a.txt 
+  370  git config pull.rebase false
+  371  git pull mynishant master
+  372  cat a.txt 
+  373  vim a.txt 
+  374  cat a.txt 
+  375  git pull mynishant master
+  376  git add .
+  377  git commit -m "update by dev2" a.txt 
+  378  git status
+  379  git pull mynishant master
+  380   git reset --merge
+  381  git pull mynishant master
+  382  ls
+  383  cat a.txt 
+  384  vim a.txt 
+  385  cat a.txt 
+  386  git pull mynishant master
+  387  git add .
+  388  git commit -m "update by dev2" a.txt 
+  389  cat a.txt 
+  390  git pull mynishant master
+  391  exit
+  392  cd /etc/
+  393  ls | grep ssh
+  394  cd ssh
+  395  ls
+  396  vim sshd_config 
+  397  passwd root
+  398  systemctl status sshd
+  399  systemctl restart sshd
+  400  systemctl status sshd
+  401  cd
+  402  ls
+  403  cd git_ws/
+  404  ls
+  405  cd Git_Jan2023_Practice_4
+  406  pwd
+  407  ls
+  408  cd ..
+  409  ls
+  410  find / --size +30K -size -50K
+  411  find / -size +30K -size -50K
+  412  find / -size +30k -size -50k
+  413  find / -user ec2-user 
+  414  LS
+  415  ls
+  416  w
+  417  ginger
+  418  finger
+  419  loginctl
+  420  yum install finger
+  421  finger
+  422  ls
+  423  mkdir shell_ws
+  424  ls
+  425  cd shell_ws/
+  426  ls
+  427  echo script.sh
+  428  cat >> script.sh
+  429  cat script.sh 
+  430  vim script.sh
+  431  /bin/bash script.sh 
+  432  ./script.sh
+  433  ls -l script.sh 
+  434  chmod +x script.sh 
+  435  ls -l script.sh 
+  436  ./script.sh
+  437  echo $SHELL
+  438  echo $PATH
+  439  which script.sh
+  440  $PATH=$PATH:/root/shell_ws
+  441  echo $PATH
+  442  $PATH=/root/shell_ws:$PATH
+  443  PATH=/root/shell_ws:$PATH
+  444  echo $PATH
+  445  PATH=$PATH:/root/shell_ws
+  446  echo $PATH
+  447  which script.sh 
+  448  script.sh
+  449  vim script.sh 
+  450  cat script.sh 
+  451  script.sh
+  452  vim /root/.bashrc 
+  453  script.sh
+  454  vim script.sh 
+  455  script.sh
+  456  script.sh vimal
+  457  vim script.sh 
+  458  script.sh vimal
+  459  script.sh vimal nishant
+  460  vim script.sh 
+  461  script.sh vimal nishant
+  462  cat script.sh 
+  463  vim script.sh 
+  464  cat script.sh 
+  465  script.sh vimal nishant
+  466  vim script.sh 
+  467  ls
+  468  cd shell_ws/
+  469  ls
+  470  history
+  471  history > bash_command.txt
+  472  cat bash_command.txt 
+  473  ls
+  474  vim user_add.sh 
+  475  cat user_add.sh 
+  476  date1 > t.txt
+  477  cat t.txt 
+  478  date1 1> t.txt
+  479  cat t.txt 
+  480  date1 2> t.txt
+  481  cat t.txt 
+  482  date1 @>> t.txt
+  483  cat t.txt 
+  484  date1 @> t.txt
+  485  date1 &>> t.txt
+  486  cat t.txt 
+  487  date1 &> t.txt
+  488  cat t.txt 
+  489  user_add.sh 
+  490  history > bash_command.txt 
+  491  ls
+  492  read n
+  493  echo $n
+  494  read -p "enter your name: " n
+  495  echo $n
+  496  ls
+  497  script.sh "nishant vimal" "redhat"
+  498  script.sh $@="nishant vimal" $2="redhat"
+  499  script.sh $@"nishant vimal" $2"redhat"
+  500  ls
+  501  rm -f typescript 
+  502  ls
+  503  for i in a b c d e; do echo $i; done;
+  504  u = "a b c d e"
+  505  u= "a b c d e"
+  506  u="a b c d e"
+  507  for i in u; do echo $i; done;
+  508  for i in $u; do echo $i; done;
+  509  ls
+  510  cp script.sh user_add.sh
+  511  ls
+  512  vim user_add.sh 
+  513  user_add.sh a b c d
+  514  cat /etc/passwd
+  515  user_add.sh a b c d
+  516  cat > user.db
+  517  cat user.db 
+  518  user_add.sh 
+  519  for i in $user.db; do echo $i; done;
+  520  x=`date`
+  521  echo $x
+  522  x=$(date)
+  523  echo $x
+  524  x=$(cat user.db)
+  525  echo $x
+  526  for i in $(cat user.db); do echo $i; done;
+  527  vim user_add.sh 
+  528  cat user_add.sh 
+  529  user_add.sh 
+  530  cat /etc/passwd
+  531  tr 'a-z' '1-9' Hi
+  532  tr 'a-z' '1-9' HI
+  533  tr 'a-z' 'A-Z' HI i am nishant
+  534  tr 'a-z' '1-9'
+  535  test 1 == 1
+  536  echo $?
+  537  test 1 == 2
+  538  echo $?
+  539  test 1 > 2
+  540  echo $?
+  541  f
+  542  echo $?
+  543  test 
+  544  test help
+  545  test --help
+  546  test 1 < 2
+  547  echo $?
+  548  test 3 < 2
+  549  echo $?
+  550  test 1 -e 1 
+  551  test 1 -ge 1 
+  552  echo $?
+  553  test 1 -ge 2 
+  554  echo $?
+  555  test 3 -le 2 
+  556  echo $?
+  557  test 3 -le 4
+  558  echo $?
+  559  [ 3 -le 4]
+  560  [ 3 -le 4 ]
+  561  echo $?
+  562  [ 3 -le 2 ]
+  563  echo $?
+  564  if [ 3 -le 4 ]; do
+  565  if [ 3 -le 4 ]; do; echo "Hi"; done;
+  566  if [ 3 -le 4 ]; then; echo "Hi"; fi;
+  567  if [ 3 -le 4 ] ; then echo "Hi"; fi
+  568  ls
+  569  cat 2
+  570  rm -f 2
+  571  cat 2
+  572  ls
+  573  cat user_add.sh 
+  574  vim user_add.sh 
+  575  user_add.sh 
+  576  vim user_add.sh 
+  577  user_add.sh 
+  578  vim user.db 
+  579  user_add.sh 
+  580  vim user_add.sh 
+  581  cat user
+  582  cat user_add.sh 
+  583  sudo su - ec2-user
+  584  cd shell_ws/
+  585  ls
+  586  cat script.sh 
+  587  vim script.sh 
+  588  cat script.sh 
+  589  script
+  590  w
+  591  ls
+  592  cd shell_ws/
+  593  ls
+  594  history
+  595  read n
+  596  echo $n
+  597  read -p "Enter your name: " n
+  598  echo $n
+  599  read -p "Enter your name: " n
+  600  echo $n
+  601  cat /etc/passwd
+  602  useradd a
+  603  passwd a
+  604  passwd -l a
+  605  touch lock.sh
+  606  chmod +x lock.sh 
+  607  vim lock.sh 
+  608  sudo su - a
+  609  user=
+  610  test -z $user
+  611  echo $?
+  612  user=abc
+  613  test -z $user
+  614  echo $?
+  615  vim lock.sh 
+  616  cat lock.sh 
+  617  lock.sh
+  618  read n
+  619  -z $n
+  620  test -z $n
+  621  echo $?
+  622  ls
+  623  cat t.txt 
+  624  ls
+  625  lock.sh 
+  626  ls
+  627  cd shell_ws/
+  628  ls
+  629  history
+  630  ls
+  631  history > bash_command.txt 
+  632  cat bash_command.txt 
+  633  while [ 1 -eq 2 ]; do echo "Hi"; kdone; done
+  634  while [ 1 -eq 2 ]; do echo "Hi";  done
+  635  while [ 1 -le 2 ]; do echo "Hi";  done
+  636  ps -aux | while
+  637  ps -aux | grep while
+  638  kill 8057
+  639  ps -aux | grep while
+  640  ls
+  641  cd shell_ws/
+  642  ls
+  643  while date ; do sleep 5;  done
+  644  date1 1> t.txt
+  645  date1 2> t.txt
+  646  date 1> a.txt
+  647  date 2> b.txt
+  648  cat a.txt 
+  649  cat b.txt 
+  650  useradd an
+  651  date &> c.txt
+  652  date1 &> d.txt
+  653  cat c.txt 
+  654  cat d.txt 
+  655  date
+  656  free -m watch -n 1
+  657  free -m | watch -n
+  658  watch -n 1 date
+  659  grep ^a | grep /etc/passwd
+  660  grep ^a  /etc/passwd
+  661  grep ^a:  /etc/passwd
+  662  cut -f1 /etc/passwd
+  663  cut -f 1 /etc/passwd
+  664  cut -f 6 -d ":" /etc/passwd
+  665  cut -f 1 -d ":" /etc/passwd
+  666  cut -f 1 -d ":" /etc/passwd | wc -l
+  667  cur -f 6 -d ":" /etc/passwd
+  668  cut -f 6 -d ":" /etc/passwd
+  669  grep a: /etc/passwd
+  670  grep ^a: /etc/passwd | cut -f 1 -d ":" /etc/passwd
+  671  grep ^a: /etc/passwd | cut -f 1 -d ":" 
+  672  x=$(grep ^a: /etc/passwd | cut -f 1 -d ":") 
+  673  echo $x
+  674  man test
+  675  test -e /root/a
+  676  echo $?
+  677  test -e /root/shell_ws/
+  678  echo $?
+  679  x="jack"
+  680  echo $x
+  681  echo $xyz
+  682  echo ${x}yz
+  683  lock.sh 
+  684  vim lock.sh 
+  685  lock.sh 
+  686  tar -cf b_user.tar /home/b
+  687  ls
+  688  rm -f b_user.tar 
+  689  tar -cf b_user.tar /home/b
+  690  date +%F
+  691  vim lock.sh 
+  692  lock.sh 
+  693  vim lock.sh 
+  694  lock.sh 
+  695  vim lock.sh 
+  696  lock.sh 
+  697  ls
+  698  cat lock.sh 
+  699  ls
+  700  lock.sh 
+  701  ls
+  702  rm -f *.txt
+  703  ls
+  704  lock.sh 
+  705  ls
+  706  yum install gttpd -y
+  707  yum install httpd -y
+  708  systemctl start httpd
+  709  systemctl enable  httpd
+  710  systemctl status httpd
+  711  cd /var/
+  712  cd
+  713  ls
+  714  cd /var/
+  715  ls
+  716  cd log/
+  717  ls
+  718  ls | grep httpd
+  719  cd httpd
+  720  ls
+  721  cat access_log 
+  722  cat error_log 
+  723  cat access_log 
+  724  wc -l access_log 
+  725  wc -l error_log 
+  726  wc -l access_log 
+  727  cat error_log 
+  728  history > /root/bash_command.txt
+  729  ls /root/
+  730  history > /root/shell_ws/bash_command.txt
+  731  ls /root/sheel_ws
+  732  ls /root/shell_ws
+  733  ls
+  734  cat access_log 
+  735  cut -f 1 -d " " access_log 
+  736  cut -f 4 -d " " access_log 
+  737  cut -f 5 -d " " access_log 
+  738  cut -f 6 -d " " access_log 
+  739  awk `{ print $1 }` access_log 
+  740  awk '{ print $1 }' access_log 
+  741  awk '{ print $2 }' access_log 
+  742  awk '{ print $4 }' access_log
+  743  awk '{ print $6 }' access_log
+  744  awk '{ print $1 }' /etc/passwd
+  745  awk -F: '{ print $1 }' /etc/passwd
+  746  awk -F: '{ print $1 " --- $6 }' /etc/passwd
+  747  awk -F: '{ print $1 " " $6 }' /etc/passwd
+  748  awk '{ print $1 }' access_log  | wc -l
+  749  awk '{ print $1 }' access_log  
+  750  awk '{ print $1 }' access_log  | sort
+  751  awk '{ print $1 }' access_log  | uniq
+  752  awk '{ print $1 }' access_log  | uniq | wc -l
+  753  awk '{ print $1 }' access_log  | uniq | sort| wc -l
+  754  awk '{ print $1 }' access_log  | uniq | sort| 
+  755  awk '{ print $1 }' access_log  | uniq | sort 
+  756  awk '{ print $1 }' access_log  |  sort | uniq
+  757  awk '{ print $1 }' access_log  |  sort | uniq -c
+  758  awk '{ print $1 }' access_log  |  sort | uniq
+  759  awk '{ print $1 }' access_log  |  sort | uniq -c
+  760  awk '{ print $1 }' access_log  |  sort | uniq -c | sort -n
+  761  awk '{ print $1 }' access_log  |  sort | uniq -c | sort -n -k1
+  762  awk '{ print $1 }' access_log  |  sort | uniq -c | sort -n -k1 | tail
+  763  awk '{ print $1 }' access_log  |  sort | uniq -c | sort -n -k1 | tail -1
+  764  awk '{ print $1 }' access_log  |  sort | uniq -c | sort -n -k1 | tail -2
+  765  history
+  766  man date
+  767  cat access_log | awk '{ print "Request from this ip: " $1 }'
+  768  cat access_log | awk '{ print "Request from this ip: " $1 }' | uniq 
+  769  cat access_log | awk '{ print "Request from this ip: " $1 }' | sort | uniq 
+  770  cat access_log | awk '{ print "Request from this ip: " $1 }' | sort | uniq -c
+  771  cat access_log | awk '{ print "Request from this ip: " $1 }' | sort | uniq -c | sort -n
+  772  cat access_log | awk '{ print "Request from this ip: " $1 }' | uniq -c | sort -n
+  773  cat access_log | awk '{ print "Request from this ip: " $1 }' | sort -n | uniq -c
+  774  cat access_log | awk '{ print "Request from this ip: " $1 }' | uniq -c | sort -n
+  775  cat access_log 
+  776  cat access_log  | grep robots.txt
+  777  awk '{ print $7 }' access_log 
+  778  awk '{ print $7 }' access_log | grep robots.txt
+  779  awk '{ print $7 }' access_log | grep robot*
+  780  awk '{ print $7 }' access_log | grep *bot*
+  781  awk '{ print $7 }' access_log | grep ^bot*
+  782  awk '{ print $7 }' access_log | grep ^*bot
+  783  awk '{ print $7 }' access_log | grep ro
+  784  awk -F: '{ print $0 }' /etc/passwd
+  785  awk '$9 ' access_log 
+  786  awk '{print $9 }' access_log 
+  787  awk '$9==404 {print $1}' access_log 
+  788  awk '$9==404 {print $0}' access_log 
+  789  awk '$9==404 {print $1}' access_log 
+  790  awk '$9==404 {print $1 "   " $9}' access_log 
+  791  awk '$9==404 {print $1 "   " $7}' access_log 
+  792  awk '$9==403 {print $1 "   " $7}' access_log 
+  793  awk '$9==403 {print $1 "   " $7}' access_log | sort
+  794  awk '$9==403 {print $1 "   " $7}' access_log | sort | uniq -c
+  795  awk '$9==403 {print $1 "   " $7}' access_log | sort | uniq -c | sort -n
+  796  awk '$9==403 {print $1 "   " $7}' access_log | sort | uniq -c | sort -n | wc -l
+  797  history > /root/shell_ws/bash_command.txt 
+  798  cd /root/shell_ws/
+  799  ls
+  800  cat bash_command.txt | tr 'a-z' 'A-Z'
+  801  cat bash_command.txt 
+  802  cat bash_command.txt | tr ' ' '\n'
+  803  cat bash_command.txt | tr -s ' ' '\n' 
+  804  cat bash_command.txt | tr -s ' ' '\n' | uniq 
+  805  cat bash_command.txt | tr -s ' ' '\n' | uniq -c
+  806  cat bash_command.txt | tr -s ' ' '\n' | sort | uniq -c
+  807  cat bash_command.txt | tr -s ' ' '\n' | sort | uniq -c | sort -n
+  808  cat bash_command.txt | tr -s ' ' '\n' | sort | uniq -c | sort -n | awk '{ print $1 }'
+  809  cat bash_command.txt | tr -s ' ' '\n' | sort | uniq -c | sort -n | awk '{ print $2 }'
+  810  cat bash_command.txt | tr -s ' ' '\n' | sort | uniq -c | sort -n | awk '{ print $0 }'
+  811  cat bash_command.txt | tr -s ' ' '\n' | sort | uniq -c | sort -n | awk '{ print $3 }'
+  812  cat bash_command.txt | tr -s ' ' '\n' | sort | uniq -c | sort -n | awk '{ print $1 }'
+  813  cat bash_command.txt | tr -s ' ' '\n' | sort | uniq -c | sort -n | awk '{ print $1 }' | tail -10
+  814  cat bash_command.txt | tr -s ' ' '\n' | sort | uniq -c | sort -n | awk '{ print $2,$1 }' | tail -10
+  815  cat bash_command.txt | tr -s ' ' '\n' | sort | uniq -c | sort -n | awk '{ print $2 " " $1 }' | tail -10
+  816  cat bash_command.txt | tr -s ' ' '\n' | sort | uniq -c | sort -n | awk '{ print $2 "=> " $1 }' | tail -10
+  817  echo $PATH
+  818  PATH=$PATH:/root/shell_ws/
+  819  echo $PATH
+  820  history > /root/shell_ws/bash_command.txt 
+  821  history
+  822  ls
+  823  cat .bashrc
+  824  cat /root/.bashrc 
+  825  lw() { echo "Hi"; }
+  826  ls
+  827  lw
+  828  lw() { date; }
+  829  lw
+  830  lw() { date; return 11; }
+  831  lw
+  832  echo $?
+  833  history
+  834  touch (1..100).txt
+  835  touch a.{1..100}.txt
+  836  ls
+  837  rm -f a*.txt
+  838  ls
+  839  history
+  840  ls
+  841  touch a.{1..100}.txt
+  842  ls
+  843  rm -f a{10..90}.txt
+  844  ls
+  845  rm -f a{10..90}.txt
+  846  echo $?
+  847  ls
+  848  rm -f a.{10..90}.txt
+  849  ls
+  850  rm -f a.{1..9}.txt
+  851  rm -f a.{1..100}.txt
+  852  ls
+  853  history
+  854  ls
+  855  touch a.{1..100}.txt
+  856  ls
+  857  for i in a.*.txt; do echo $i; done
+  858  for i in a.*.txt; do echo $i; done | wc -l
+  859  for i in a.*.txt; do echo $i; done
+  860  history
+  861  for i in a.*.txt; do ls -l $i; done
+  862  for i in a.*.txt; do ls -l $i; done | awk '{ print $2}'
+  863  for i in a.*.txt; do ls -l $i; done
+  864  for i in a.*.txt; do ls -l $i; done | awk '{ print $1 " " $3 " " $4 " " $9}'
+  865  yum install docker -y
+  866  systemctl status docker
+  867  systemctl enable --now docker
+  868  systemctl status docker
+  869  docker pull centos
+  870  docker run -dit --name os1 centos
+  871  docker ps
+  872  docker ps -a
+  873  docker ps | awk '{ print $1 }'
+  874  docker ps | awk '{ print $1 " " $2 " " $4 " " $7 }'
+  875  docker ps | awk '{ print $1 " " $2 }'
+  876  docker ps | awk -F:'{ print $1 " " $2 }'
+  877  docker ps | awk -F: '{ print $1 " " $2 }'
+  878  ls
+  879  docker rm -f $(docker ps)
+  880  docker rm -f $(docker ps -q)
+  881  docker rm -f $(docker ps -aq)
+  882  docker ps
+  883  docker ps -a
+  884  ls
+  885  awk '{ print NF }' user.db 
+  886  awk '{ print NF }' script.sh 
+  887  cat script.sh 
+  888  awk '{ print NF-1 }' script.sh 
+  889  awk '{ print $(NF-1) }' script.sh 
+  890  awk '{ print $(NF) }' script.sh 
+  891  ls
+  892  awk '{ print NF, $(NF) }' script.sh 
+  893  awk 'NR==3 { print NF, $(NF) }' script.sh 
+  894  awk 'NF==3 { print NF, $(NF) }' script.sh 
+  895  awk 'NR==7 { print NF, $(NF) }' script.sh 
+  896  awk 'NF==7 { print NF, $(NF) }' script.sh 
+  897  awk 'NF==7 { print NR, NF, $(NF) }' script.sh 
+  898  awk '{ print NR, NF, $(NF) }' script.sh 
+  899  awk 'END { print }' script.sh 
+  900  ls
+  901  cat bash_command.txt 
+  902  history
+  903  history > bash_command.txt 
+  904  grep -n script.sh 
+  905  awk '{ print NR, NF, NF > 0}' script.sh 
+  906  awk 'NF > 0{ print NR " " NF}' script.sh 
+  907  awk 'NF > 0{ print NR " " NF " " $(1..NF)}' script.sh 
+  908  awk 'NF > 0{ print NR " " NF " " $(NF)}' script.sh 
+  909  awk 'NF > 0{ print NR " " NF " " $(NF)}' script.sh | wc -l
+  910  awk 'NF == 0{ print NR " " NF " " $(NF)}' script.sh | wc -l
+  911  awk 'BEGIN { for (i=1;i<=10;i++) print i }'
+  912  awk 'BEGIN { for (i=1;i<=10;i++) print i*3 }'
+  913  ls
+  914  echo redhat12 | passwd --stdin a
+  915  ssh a@localhost
+  916  awk '/a/ { print }' /etc/passwd
+  917  awk '/an/ { print }' /etc/passwd
+  918  awk '/an { print }' /etc/passwd
+  919  awk '^an { print }' /etc/passwd
+  920  awk '/an/ { print }' /etc/passwd
+  921  awk '/an:/ { print }' /etc/passwd
+  922  awk '/^a:/ { print }' /etc/passwd
+  923  awk '/^a/ { print }' /etc/passwd
+  924  cat /etc/passwd
+  925  sed 's/1010/1100' /etc/passwd
+  926  sed 's/1010/1100/g' /etc/passwd
+  927  cat /etc/passwd
+  928  sed -i 's/1010/1100/g' /etc/passwd
+  929  cat /etc/passwd
+  930  sed -i 's/1010/1100/g' /etc/passwd
+  931  ls
+  932  rm -f a.{1..100}.txt
+  933  ls
+  934  rm -f 0
+  935  ls
+  936  vim c.sh
+  937  ./c.sh -a script.sh 
+  938  chmod +x c.sh
+  939  ./c.sh -a script.sh 
+  940  vim c.sh 
+  941  ./c.sh -a script.sh 
+  942  vim c.sh 
+  943  ./c.sh -a script.sh 
+  944  cat c.sh 
+  945  vim c.sh 
+  946  ./c.sh -a script.sh 
+  947  vim c.sh 
+  948  ./c.sh -a script.sh 
+  949  ./c.sh -f script.sh 
+  950  ./c.sh -d script.sh 
+  951  ls
+  952  vim d.sh
+  953  chmod +x d.sh 
+  954  ./d.sh 
+  955  vim d.sh
+  956  ./d.sh 
+  957  vim d.sh
+  958  ./d.sh 
+  959  set
+  960  set | grep ls
+  961  set | grep x
+  962  vimal="lw"
+  963  set | grep vimal
+  964  ping -c 1 8.8.8.8
+  965  ping  8.8.8.8
+  966  ping -c 1 8.8.8.8
+  967  ls
+  968  vim question.txt
+  969  cat question.txt 
+  970  ls
+  971  or_loop.sh
+  972  vim or_loop.sh
+  973  chmod +x or_loop.sh 
+  974  ./or_loop.sh 
+  975  vim or_loop.sh
+  976  ./or_loop.sh 
+  977  vim or_loop.sh
+  978  ./or_loop.sh 
+  979  /bin/bash or_loop.sh 
+  980  vim or_loop.sh
+  981  /bin/bash or_loop.sh 
+  982  vim or_loop.sh
+  983  /bin/bash or_loop.sh 
+  984  cp or_loop.sh and_loop.sh
+  985  ls
+  986  vim and_loop.sh 
+  987  and_loop.sh 
+  988  ls
+  989  cat and_loop.sh 
+  990  ls
+  991  cat >> question.txt 
+  992  cat question.txt 
+  993  cat or_loop.sh 
+  994  cat >> question.txt 
+  995  cat question.txt 
+  996  ls
+  997  read -p "enter you name: " -n 2 | myname
+  998  echo $myname
+  999  echo $n
+ 1000  cd shell_ws/
+ 1001  ls
+ 1002  cal && date
+ 1003  date && cat c.sh
+ 1004  date || cal
+ 1005  date || cal1
+ 1006  date1 || cal
+ 1007  echo $?
+ 1008  date1 && cat c.sh
+ 1009  test $? -eq 0 && echo "last command is executed successfully."
+ 1010  date
+ 1011  test $? -eq 0 && echo "last command is executed successfully."
+ 1012  test $? -eq 0 && echo "last command is executed successfully." || echo "last command failed becuase of some error."
+ 1013  date1
+ 1014  test $? -eq 0 && echo "last command is executed successfully." || echo "last command failed becuase of some error."
+ 1015  test -r /etc/passwd && echo "allowed" || echo "not allowed"
+ 1016  test -r /etc/shadow && echo "allowed" || echo "not allowed"
+ 1017  ls
+ 1018  vim set_bydefault_value.sh
+ 1019  ls
+ 1020  chmod +x set_bydefault_value.sh 
+ 1021  set_bydefault_value.sh 
+ 1022  vim set_bydefault_value.sh
+ 1023  set_bydefault_value.sh 
+ 1024  vim set_bydefault_value.sh
+ 1025  set_bydefault_value.sh 
+ 1026  vim set_bydefault_value.sh
+ 1027  set_bydefault_value.sh 
+ 1028  cat set_bydefault_value.sh 
+ 1029  x=vimal
+ 1030  echo #$x
+ 1031  echo $x
+ 1032  echo ${x}
+ 1033  echo ${x}daga
+ 1034  echo ${x} daga
+ 1035  echo ${x^} daga
+ 1036  echo ${x^^} daga
+ 1037  history
+ 1038  y=VImal
+ 1039  echo $y
+ 1040  echo ${y}
+ 1041  echo ${y,}
+ 1042  echo ${y,,}
+ 1043  history
+ 1044  y=VImAl
+ 1045  echo ${y,}
+ 1046  echo ${y,,}
+ 1047  vim set_bydefault_value.sh 
+ 1048  x=nishanttt
+ 1049  echo $x
+ 1050  exho ${x}
+ 1051  echo ${x}
+ 1052  echo ${x%}
+ 1053  echo ${x%t}
+ 1054  echo ${x%td}
+ 1055  echo ${x%tt}
+ 1056  history
+ 1057  echo ${x%tt} singh
+ 1058  ls
+ 1059  x="one/two/three/four/hello.txt"
+ 1060  echo $x
+ 1061  echo ${x}
+ 1062  echo ${x%.txt}
+ 1063  echo ${x%.txt}.html
+ 1064  echo ${x%.*}.html
+ 1065  history
+ 1066  y="http://www.google.com:443/data/hello.html"
+ 1067  exho y
+ 1068  echo y
+ 1069  echo $y
+ 1070  echo ${y}
+ 1071  echo ${y%}
+ 1072  echo ${y%/}
+ 1073  echo ${y%/*}
+ 1074  echo ${y%/*/*}
+ 1075  echo ${y%/*/*/*}
+ 1076  echo ${y%/*/*}
+ 1077  echo ${y%:*/*/*}
+ 1078  history
+ 1079  echo ${y%:*/*/*}
+ 1080  echo ${y%/*/*}
+ 1081  echo ${y%/*/*/*}
+ 1082  echo ${y%/*/*}
+ 1083  echo ${y%/*}
+ 1084  echo ${y%/}
+ 1085  env
+ 1086  echo $BASH_VERSION
+ 1087  echo {1..100}
+ 1088  history
+ 1089  echo {1..100..2}
+ 1090  echo {1..100..10}
+ 1091  s=linuxworld
+ 1092  echo $s
+ 1093  echo ${s}
+ 1094  echo ${s^}
+ 1095  echo ${s^^}
+ 1096  echo ${s,}
+ 1097  echo ${s}
+ 1098  echo ${s:0:1}
+ 1099  echo ${s:0:5}
+ 1100  echo ${s:0:5}history
+ 1101  history
+ 1102  echo ${s:5:5}history
+ 1103  echo ${s:5:5}
+ 1104  a="/a/b/c/d/hello.txt"
+ 1105  echo $a
+ 1106  echo ${a}
+ 1107  echo ${a#%%/*}
+ 1108  echo ${a#%%/*a}
+ 1109  echo ${a#%%/*a}b
+ 1110  echo ${a#%%/*b}
+ 1111  echo ${a#%/*b}
+ 1112  echo ${a##*/a}
+ 1113  echo ${a##*/b}
+ 1114  echo ${a##*/d}
+ 1115  echo ${a##*/d/}
+ 1116  history
+ 1117  a="/a/b/c/d/hello.txt"
+ 1118  echo ${a##*/a}
+ 1119  echo ${a##*/b}
+ 1120  echo ${a##*/d}
+ 1121  echo ${a##*/d/}
+ 1122  a=(abhi nishant nidhi nitya)
+ 1123  echo $a
+ 1124  echo ${a}
+ 1125  echo ${a[0]}
+ 1126  echo ${a[1]}
+ 1127  echo ${a[2]}
+ 1128  echo ${a[3]}
+ 1129  echo ${a[4]}
+ 1130  history
+ 1131  echo ${a[@]}
+ 1132  echo $#
+ 1133  man wc
+ 1134  ls
+ 1135  history > bash_command.txt 
